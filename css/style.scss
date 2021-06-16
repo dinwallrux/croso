@@ -21,6 +21,15 @@ body {
     background-color: $frost;
 }
 
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+}
+
 .wrap-brand {
     width: 400px;
     height: 100px;
@@ -102,7 +111,7 @@ body {
     position: absolute;
     left: 0;
     width: 400px;
-    min-height: 801px;
+    height: 100vh;
     z-index: 1;
     background: $frost;
     display: flex;
@@ -213,13 +222,23 @@ body {
 .body {
     position: relative;
     width: 100%;
-    min-height: 567px;
+    height: 100vh;
+    overflow: hidden;
+    .bg {
+        width: 100%;
+	    height: 98vh;
+        img {
+            width: 100%;
+            height: 100%;
+            transform: scale(1.2);
+        }
+    }
 }
 
 .number {
     position: absolute;
-    width: 42.7px;
-    height: 42.7px;
+    width: 38px;
+    height: 38px;
     border: 1px solid #000000;
     border-radius: 100px;
     box-sizing: border-box;
@@ -229,8 +248,8 @@ body {
     justify-content: center;
     cursor: pointer;
     span {
-        width: 26.97px;
-        height: 26.97px;
+        width: 24px;
+        height: 24px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -255,32 +274,32 @@ body {
 
 .parc-publics {
     #number-1 {
-        left: 938px;
-        top: 698px;
+        left: 933px;
+        top: 622px;
     }
     #number-2 {
-        top: 637px;
-        left: 278px;
+        top: 560px;
+        left: 177px;
     }
     #number-3 {
-        top: 528px;
-        left: 810px;
+        top: 452px;
+        left: 785px;
     }
     #number-4 {
-        top: 387px;
-        left: 979px;
+        top: 312px;
+        left: 977px;
     }
     #number-5 {
-        top: 288px;
-        left: 1153px;
+        top: 218px;
+        left: 1183px;
     }
     #number-6 {
-        top: 717px;
-        left: 477px;
+        top: 643px;
+        left: 415px;
     }
     #number-7 {
-        top: 552px;
-        left: 595px;
+        top: 480px;
+        left: 542px;
     }
     #number-8 {
         top: 581px;
@@ -420,7 +439,7 @@ body {
 }
 
 .tippy-popper[x-placement^=top] .tippy-arrow {
-    border-top: 8px solid $black;
+    border-top: 8px solid $green;
 }
 .tippy-popper[x-placement^=bottom] .tippy-arrow {
     border-bottom: 8px solid $black;

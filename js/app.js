@@ -93,7 +93,7 @@ jQuery(document).ready(function ($) {
         if($('.parc-publics').length > 0) {
             par_publics.forEach(function (data) {
                 $('.parc-publics').append(`
-                    <div class="numbers">
+                    <div class="numbers" data-depth="0.7">
                         <div id="${data.idButton}" class="number">
                             <span>${data.value}</span>
                         </div>
@@ -234,7 +234,7 @@ jQuery(document).ready(function ($) {
                 content: tooltip[0],
                 arrow: true,
                 allowHTML: true,
-                placement: 'right',
+                placement: 'auto',
                 trigger: 'click',
                 interactive: true,
             });
@@ -242,10 +242,11 @@ jQuery(document).ready(function ($) {
     }();
 
     // Parallax
-    // !function () {
-    //     let scene = $('#scene')[0];
-    //     let parallaxInstance = new Parallax(scene);
-    //
-    //     parallaxInstance.friction(0.2, 0.2);
-    // }();
+    !function () {
+        let scene = document.getElementById('scene');
+        let parallaxInstance = new Parallax(scene, {
+            relativeInput: true,
+            pointerEvents: true
+        });
+    }();
 })
