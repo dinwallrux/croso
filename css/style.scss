@@ -109,17 +109,21 @@ body {
 
 .sidebar {
     position: absolute;
+    top: 100px;
     left: 0;
     width: 400px;
-    height: 100vh;
+    height: 85vh;
     z-index: 1;
     background: $frost;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 40px 35px 50px;
+    padding: 20px 35px 10px;
     box-sizing: border-box;
     transition: .2s all ease-in-out;
+    @include full-hd() {
+        height: 89.7vh;
+    }
     &.collapsed {
         left: -410px;
     }
@@ -131,7 +135,10 @@ body {
         line-height: 43px;
         color: $black;
         margin: 0;
-        margin-bottom: 40px;
+        margin-bottom: 10px;
+        @include full-hd() {
+            margin-bottom: 40px;
+        }
     }
     p {
         font-family: Source Sans Pro;
@@ -148,7 +155,10 @@ body {
     }
     ul.menus {
         margin-top: 10px;
-        margin-bottom: 60px;
+        margin-bottom: 30px;
+        @include full-hd() {
+            margin-bottom: 60px;
+        }
         li {
             display: flex;
             align-items: center;
@@ -224,6 +234,21 @@ body {
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    &.parc-publics {
+        img {
+            object-fit: cover;
+            object-position: bottom;
+        }
+    }
+    &.stades {
+        img {
+            object-fit: cover;
+            object-position: top;
+            @include desktop-medium() {
+                object-position: top right;
+            }
+        }
+    }
     .bg {
         width: 100%;
 	    height: 98vh;
@@ -274,32 +299,88 @@ body {
 
 .parc-publics {
     #number-1 {
-        left: 933px;
-        top: 622px;
+        top: 613px;
+        left: 934px;
+        @include desktop-medium() {
+            top: 805px;
+            left: 997px;
+        }
+        @include full-hd() {
+            top: 915px;
+            left: 1314px;
+        }
     }
     #number-2 {
-        top: 560px;
-        left: 177px;
+        top: 541px;
+        left: 184px;
+        @include desktop-medium() {
+            top: 728px;
+            left: 168px;
+        }
+        @include full-hd() {
+            top: 817px;
+            left: 264px;
+        }
     }
     #number-3 {
-        top: 452px;
-        left: 785px;
+        top: 419px;
+        left: 786px;
+        @include desktop-medium() {
+            top: 592px;
+            left: 834px;
+        }
+        @include full-hd() {
+            top: 644px;
+            left: 1106px;
+        }
     }
     #number-4 {
-        top: 312px;
+        top: 253px;
         left: 977px;
+        @include desktop-medium() {
+            top: 406px;
+            left: 1045px;
+        }
+        @include full-hd() {
+            top: 407px;
+            left: 1374px;
+        }
     }
     #number-5 {
-        top: 218px;
+        top: 146px;
         left: 1183px;
+        @include desktop-medium() {
+            top: 294px;
+            left: 1271px;
+        }
+        @include full-hd() {
+            top: 259px;
+            left: 1670px;
+        }
     }
     #number-6 {
-        top: 643px;
-        left: 415px;
+        top: 634px;
+        left: 416px;
+        @include desktop-medium() {
+            top: 827px;
+            left: 428px;
+        }
+        @include full-hd() {
+            top: 945px;
+            left: 598px;
+        }
     }
     #number-7 {
-        top: 480px;
+        top: 440px;
         left: 542px;
+        @include desktop-medium() {
+            top: 621px;
+            left: 566px;
+        }
+        @include full-hd() {
+            top: 676px;
+            left: 763px;
+        }
     }
     #number-8 {
         top: 581px;
@@ -309,40 +390,112 @@ body {
 
 .stades {
     #number-1 {
-        top: 15%;
-        left: 49%;
+        top: 80px;
+        left: 680px;
+        @include desktop-medium() {
+            top: 90px;
+            left: 615px;
+        }
+        @include full-hd() {
+            top: 112px;
+            left: 957px;
+        }
     }
     #number-2 {
-        top: 14%;
-        left: 15.2%;
+        top: 70px;
+        left: 115px;
+        @include desktop-medium() {
+            top: 73px;
+            left: -50px;
+        }
+        @include full-hd() {
+            top: 100px;
+            left: 166px;
+        }
     }
     #number-3 {
-        top: 19.5%;
-        right: 14.7%;
+        top: 113px;
+        left: 1217px;
+        @include desktop-medium() {
+            top: 129px;
+            left: 1253px;
+        }
+        @include full-hd() {
+            top: 167px;
+            left: 1714px;
+        }
     }
     #number-4 {
-        top: 50%;
-        left: 37%;
+        top: 401px;
+        left: 480px;
+        @include desktop-medium() {
+            top: 468px;
+            left: 384px;
+        }
+        @include full-hd() {
+            top: 572px;
+            left: 684px;
+        }
     }
     #number-5 {
-        top: 58%;
-        left: 51%;
+        top: 468px;
+        left: 708px;
+        @include desktop-medium() {
+            top: 550px;
+            left: 645px;
+        }
+        @include full-hd() {
+            top: 667px;
+            left: 994px;
+        }
     }
     #number-6 {
-        top: 67%;
-        left: 19%;
+        top: 545px;
+        left: 183px;
+        @include desktop-medium() {
+            top: 640px;
+            left: 32px;
+        }
+        @include full-hd() {
+            top: 773px;
+            left: 259px;
+        }
     }
     #number-7 {
-        top: 44.5%;
-        left: 14.3%;
+        top: 340px;
+        left: 110px;
+        @include desktop-medium() {
+            top: 397px;
+            left: -50px;
+        }
+        @include full-hd() {
+            top: 489px;
+            left: 163px;
+        }
     }
     #number-7-1 {
-        top: 28%;
-        left: 39%;
+        top: 200px;
+        left: 510px;
+        @include desktop-medium() {
+            top: 226px;
+            left: 417px;
+        }
+        @include full-hd() {
+            top: 290px;
+            left: 720px;
+        }
     }
     #number-8 {
-        top: 42.5%;
-        right: 5.5%;
+        top: 322px;
+        left: 1370px;
+        @include desktop-medium() {
+            top: 374px;
+            left: 1435px;
+        }
+        @include full-hd() {
+            top: 463px;
+            left: 1934px;
+        }
     }
 }
 

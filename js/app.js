@@ -200,7 +200,7 @@ jQuery(document).ready(function ($) {
         if($('.stades').length > 0) {
             stades.forEach(function (data) {
                 $('.stades').append(`
-                    <div class="numbers">
+                    <div class="numbers" data-depth="0.7">
                         <div id="${data.idButton}" class="number">
                             <span>${data.value}</span>
                         </div>

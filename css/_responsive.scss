@@ -15,6 +15,7 @@ $mq-mobile-landscape	: 480px !default;
 $mq-tablet-portrait		: 768px !default;
 $mq-tablet-landscape	: 1024px !default;
 $mq-desktop				: 1382px !default;
+$mq-desktop-medium		: 1600px !default;
 $mq-full-hd				: 1900px !default;
 
 // Both portrait and landscape
@@ -139,13 +140,13 @@ $mq-full-hd				: 1900px !default;
 }
 
 @mixin desktop-medium {
-	@media only screen and (min-width : $mq-desktop + 1) and (max-width : 1600) {
+	@media only screen and (min-width : $mq-desktop + 1) and (max-width : $mq-desktop-medium - 1) {
 		@content;
 	}
 }
 
 @mixin full-hd {
-	@media only screen and (min-width : $mq-full-hd + 1) {
+	@media only screen and (min-width : $mq-desktop-medium) {
 		@content;
 	}
 }
