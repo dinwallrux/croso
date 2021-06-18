@@ -358,104 +358,140 @@ body {
   left: 185px; }
 
 .stades #number-1 {
-  top: 80px;
-  left: 680px; }
+  top: 10.5%;
+  left: 49.4%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .stades #number-1 {
-      top: 90px;
-      left: 615px; } }
+      top: 9%;
+      left: 49.5%; } }
+  @media only screen and (min-width: 1600px) {
+    .stades #number-1 {
+      top: 8%;
+      left: 49.4%; } }
   @media only screen and (min-width: 1900px) {
     .stades #number-1 {
-      top: 112px;
-      left: 957px; } }
+      top: 10.5%;
+      left: 49.5%; } }
 .stades #number-2 {
-  top: 70px;
-  left: 115px; }
+  top: 10%;
+  left: 8.5%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .stades #number-2 {
-      top: 73px;
-      left: -50px; } }
+      top: 8.5%;
+      left: 8.5%; } }
+  @media only screen and (min-width: 1600px) {
+    .stades #number-2 {
+      top: 8%;
+      left: 8.5%; } }
   @media only screen and (min-width: 1900px) {
     .stades #number-2 {
-      top: 100px;
-      left: 166px; } }
+      top: 9.5%;
+      left: 8.7%; } }
 .stades #number-3 {
-  top: 113px;
-  left: 1217px; }
+  top: 16%;
+  right: 7%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .stades #number-3 {
-      top: 129px;
-      left: 1253px; } }
+      top: 14%;
+      right: 7.3%; } }
+  @media only screen and (min-width: 1600px) {
+    .stades #number-3 {
+      top: 14%;
+      right: 7.5%; } }
   @media only screen and (min-width: 1900px) {
     .stades #number-3 {
-      top: 167px;
-      left: 1714px; } }
+      top: 17%;
+      right: 7.8%; } }
 .stades #number-4 {
-  top: 401px;
-  left: 480px; }
+  top: 60%;
+  left: 34.7%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .stades #number-4 {
-      top: 468px;
-      left: 384px; } }
+      top: 53%;
+      left: 34.7%; } }
+  @media only screen and (min-width: 1600px) {
+    .stades #number-4 {
+      top: 51.5%;
+      left: 35.1%; } }
   @media only screen and (min-width: 1900px) {
     .stades #number-4 {
-      top: 572px;
-      left: 684px; } }
+      top: 59%;
+      left: 35.4%; } }
 .stades #number-5 {
-  top: 468px;
-  left: 708px; }
+  top: 71%;
+  left: 51.5%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .stades #number-5 {
-      top: 550px;
-      left: 645px; } }
+      top: 64%;
+      left: 51.5%; } }
+  @media only screen and (min-width: 1600px) {
+    .stades #number-5 {
+      top: 61%;
+      left: 51.5%; } }
   @media only screen and (min-width: 1900px) {
     .stades #number-5 {
-      top: 667px;
-      left: 994px; } }
+      top: 69%;
+      left: 51.6%; } }
 .stades #number-6 {
-  top: 545px;
-  left: 183px; }
+  top: 83%;
+  left: 12.4%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .stades #number-6 {
-      top: 640px;
-      left: 32px; } }
+      top: 74%;
+      left: 12.5%; } }
+  @media only screen and (min-width: 1600px) {
+    .stades #number-6 {
+      top: 71%;
+      left: 12.4%; } }
   @media only screen and (min-width: 1900px) {
     .stades #number-6 {
-      top: 773px;
-      left: 259px; } }
+      top: 80%;
+      left: 13%; } }
 .stades #number-7 {
-  top: 340px;
-  left: 110px; }
+  top: 52%;
+  left: 8.5%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .stades #number-7 {
-      top: 397px;
-      left: -50px; } }
+      top: 46.3%;
+      left: 8.5%; } }
+  @media only screen and (min-width: 1600px) {
+    .stades #number-7 {
+      top: 44%;
+      left: 8.5%; } }
   @media only screen and (min-width: 1900px) {
     .stades #number-7 {
-      top: 489px;
-      left: 163px; } }
+      top: 50%;
+      left: 8.5%; } }
 .stades #number-7-1 {
-  top: 200px;
-  left: 510px; }
+  top: 31%;
+  left: 36.6%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .stades #number-7-1 {
-      top: 226px;
-      left: 417px; } }
+      top: 26.6%;
+      left: 36.8%; } }
+  @media only screen and (min-width: 1600px) {
+    .stades #number-7-1 {
+      top: 25%;
+      left: 37%; } }
   @media only screen and (min-width: 1900px) {
     .stades #number-7-1 {
-      top: 290px;
-      left: 720px; } }
+      top: 29.3%;
+      left: 37.2%; } }
 .stades #number-8 {
-  top: 322px;
-  left: 1370px; }
+  top: 48.5%;
+  right: -4.5%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .stades #number-8 {
-      top: 374px;
-      left: 1435px; } }
+      top: 43%;
+      right: -4%; } }
+  @media only screen and (min-width: 1600px) {
+    .stades #number-8 {
+      top: 40.5%;
+      right: -3.5%; } }
   @media only screen and (min-width: 1900px) {
     .stades #number-8 {
-      top: 463px;
-      left: 1934px; } }
+      top: 47%;
+      right: -3.5%; } }
 
 .tooltip {
   width: 220px;
