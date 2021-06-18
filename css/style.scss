@@ -47,16 +47,16 @@ body {
             font-size: 32px;
             cursor: pointer;
         }
-        .ion-ios-arrow-round-back {
+        .close {
             display: none;
-            font-size: 46px;
+            font-size: 36px;
         }
         &.back {
             background-color: #333537;
             .ion-md-menu {
                 display: none;
             }
-            .ion-ios-arrow-round-back {
+            .close {
                 display: block;
             }
         }
@@ -121,6 +121,12 @@ body {
     padding: 20px 35px 10px;
     box-sizing: border-box;
     transition: .2s all ease-in-out;
+    @include desktop-medium() {
+        height: 89vh;
+    }
+    @include desktop-large {
+        height: 88.9vh;
+    }
     @include full-hd() {
         height: 89.7vh;
     }
@@ -262,8 +268,8 @@ body {
 
 .number {
     position: absolute;
-    width: 38px;
-    height: 38px;
+    width: 57px;
+    height: 57px;
     border: 1px solid #000000;
     border-radius: 100px;
     box-sizing: border-box;
@@ -273,8 +279,8 @@ body {
     justify-content: center;
     cursor: pointer;
     span {
-        width: 24px;
-        height: 24px;
+        width: 36px;
+        height: 36px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -286,7 +292,13 @@ body {
         font-family: Source Sans Pro;
         font-style: normal;
         font-weight: bold;
-        font-size: 14px;
+        font-size: 18px;
+    }
+    &:hover {
+        border-color: $green;
+        span {
+            background-color: $green;
+        }
     }
 }
 
@@ -299,87 +311,115 @@ body {
 
 .parc-publics {
     #number-1 {
-        top: 613px;
-        left: 934px;
+        bottom: 0%;
+        right: 27.9%;
         @include desktop-medium() {
-            top: 805px;
-            left: 997px;
+            bottom: -1%;
+            right: 25.9%;
+        }
+        @include desktop-large() {
+            bottom: -1%;
+            right: 28.3%;
         }
         @include full-hd() {
-            top: 915px;
-            left: 1314px;
+            bottom: 0%;
+            right: 28.7%;
         }
     }
     #number-2 {
-        top: 541px;
-        left: 184px;
+        bottom: 10.2%;
+        left: 12.3%;
         @include desktop-medium() {
-            top: 728px;
-            left: 168px;
+            bottom: 8%;
+            left: 8.3%;
+        }
+        @include desktop-large() {
+            bottom: 8%;
+            left: 12.5%;
         }
         @include full-hd() {
-            top: 817px;
-            left: 264px;
+            bottom: 10%;
+            left: 13%;
         }
     }
     #number-3 {
-        top: 419px;
-        left: 786px;
+        bottom: 28.5%;
+        left: 57.5%;
         @include desktop-medium() {
-            top: 592px;
-            left: 834px;
+            bottom: 24.3%;
+            left: 58.3%;
+        }
+        @include desktop-large() {
+            bottom: 24.5%;
+            left: 57.5%;
         }
         @include full-hd() {
-            top: 644px;
-            left: 1106px;
+            bottom: 28.5%;
+            left: 57.5%;
         }
     }
     #number-4 {
-        top: 253px;
-        left: 977px;
+        top: 37.5%;
+        right: 24.3%;
         @include desktop-medium() {
-            top: 406px;
-            left: 1045px;
+            top: 47.9%;
+            right: 22%;
+        }
+        @include desktop-large() {
+            top: 46.9%;
+            right: 24.9%;
         }
         @include full-hd() {
-            top: 407px;
-            left: 1374px;
+            top: 41.5%;
+            right: 25.4%;
         }
     }
     #number-5 {
-        top: 146px;
-        left: 1183px;
+        top: 20.5%;
+        right: 9.9%;
         @include desktop-medium() {
-            top: 294px;
-            left: 1271px;
+            top: 33.5%;
+            right: 5.9%;
+        }
+        @include desktop-large() {
+            top: 32.9%;
+            right: 10.5%;
         }
         @include full-hd() {
-            top: 259px;
-            left: 1670px;
+            top: 25.5%;
+            right: 10.5%;
         }
     }
     #number-6 {
-        top: 634px;
-        left: 416px;
+        bottom: -4.8%;
+        left: 29.3%;
         @include desktop-medium() {
-            top: 827px;
-            left: 428px;
+            bottom: -4.8%;
+            left: 27.4%;
+        }
+        @include desktop-large() {
+            bottom: -4.8%;
+            left: 29.7%;
         }
         @include full-hd() {
-            top: 945px;
-            left: 598px;
+            bottom: -3.8%;
+            left: 30.3%;
         }
     }
     #number-7 {
-        top: 440px;
-        left: 542px;
+        top: 65.5%;
+        left: 39.6%;
         @include desktop-medium() {
-            top: 621px;
-            left: 566px;
+            top: 73.3%;
+            left: 38.5%;
+        }
+        @include desktop-large() {
+            top: 72.5%;
+            left: 39.7%;
         }
         @include full-hd() {
-            top: 676px;
-            left: 763px;
+            top: 69.5%;
+            left: 39.8%;
         }
     }
     #number-8 {

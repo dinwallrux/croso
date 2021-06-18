@@ -6,18 +6,27 @@ jQuery(document).ready(function ($) {
     !function () {
         let trigger = $('#trigger-sidebar');
         let isCollapsed = $('.sidebar').hasClass('collapsed');
+
+        // Remove class if burger menu is not exist for first time
         if (isCollapsed) trigger.removeClass('back');
 
+        if (!isCollapsed) {
+            // Close header title page when click on it
+            $('.header > div').not('.wrap-brand').click(function (e) {
+                $('.sidebar').addClass('collapsed')
+                trigger.removeClass('back')
+            })
+            // Close sidebar when click body of the illustration
+            $('.body').on('click', function (e) {
+                $('.sidebar').addClass('collapsed')
+                trigger.removeClass('back')
+            })
+        }
+
+        // Trigger sidebar to show by click
         $('#trigger-sidebar i').on('click', function (e) {
             $('.sidebar').toggleClass('collapsed');
             trigger.toggleClass('back')
-
-            // if(isCollapsed) {
-            //     trigger.add
-            // } else {
-            //     trigger.find('.ion-ios-arrow-round-back').css('display', 'none')
-            //     trigger.find('.ion-md-menu').css('display', 'block')
-            // }
         });
 
 
@@ -92,8 +101,8 @@ jQuery(document).ready(function ($) {
 
         if($('.parc-publics').length > 0) {
             par_publics.forEach(function (data) {
-                $('.parc-publics').append(`
-                    <div class="numbers" data-depth="0.7">
+                $('.parc-publics .bg').append(`
+                    <div class="numbers" >
                         <div id="${data.idButton}" class="number">
                             <span>${data.value}</span>
                         </div>
@@ -103,7 +112,7 @@ jQuery(document).ready(function ($) {
                                 <p>${data.tooltipText}</p>
                             </div>
                             <div class="tooltip-footer">
-                                <a href="${data.link}" target="_blank" class="btn btn-success">
+                                <a href="${data.link}" class="btn btn-success">
                                     <span>${data.tooltipButton}</span>
                                 </a>
                             </div>
@@ -210,7 +219,7 @@ jQuery(document).ready(function ($) {
                                 <p>${data.tooltipText}</p>
                             </div>
                             <div class="tooltip-footer">
-                                <a href="${data.link}" target="_blank" class="btn btn-success">
+                                <a href="${data.link}" class="btn btn-success">
                                     <span>${data.tooltipButton}</span>
                                 </a>
                             </div>
@@ -246,7 +255,25 @@ jQuery(document).ready(function ($) {
         let scene = document.getElementById('scene');
         let parallaxInstance = new Parallax(scene, {
             relativeInput: true,
-            pointerEvents: true
+            pointerEvents: true,
         });
+        parallaxInstance.limit(true, false)
     }();
+    // !function () {
+    //     // Add event listener
+    //     document.addEventListener("mousemove", parallax);
+    //     const elem = document.querySelector("#parallax");
+    //     // Magic happens here
+    //     function parallax(e) {
+    //         let _w = window.innerWidth/2;
+    //         let _h = window.innerHeight/2;
+    //         let _mouseX = e.clientX;
+    //         let _mouseY = e.clientY;
+    //         let _depth1 = `${50 + (_mouseX - _w) * 0.01}% ${50 + (_mouseY - _h) * 0.01}%`;
+    //         let _depth2 = `${50 + (_mouseX - _w) * 0.02}% ${50 + (_mouseY - _h) * 0.02}%`;
+    //         let _depth3 = `${50 + (_mouseX - _w) * 0.06}% ${80 + (_mouseY - _h) * 0.07}%`;
+    //         let x = `${_depth3}, ${_depth2}, ${_depth1}`;
+    //         elem.style.backgroundPosition = x;
+    //     }
+    // }();
 })

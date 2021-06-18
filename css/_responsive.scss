@@ -145,8 +145,14 @@ $mq-full-hd				: 1900px !default;
 	}
 }
 
-@mixin full-hd {
+@mixin desktop-large {
 	@media only screen and (min-width : $mq-desktop-medium) {
+		@content;
+	}
+}
+
+@mixin full-hd {
+	@media only screen and (min-width : $mq-full-hd) {
 		@content;
 	}
 }
