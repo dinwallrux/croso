@@ -13,10 +13,6 @@ body {
   background-color: #EBEBEB; }
 
 .header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
   width: 100%;
   z-index: 1; }
 
@@ -88,7 +84,7 @@ body {
   top: 100px;
   left: 0;
   width: 400px;
-  height: 85vh;
+  height: 89.9vh;
   z-index: 1;
   background: #EBEBEB;
   display: flex;
@@ -193,24 +189,38 @@ body {
 .body {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 89.8vh;
   overflow: hidden; }
+  @media only screen and (min-width: 1383px) and (max-width: 1599px) {
+    .body {
+      height: 73vh; } }
+  @media only screen and (min-width: 1600px) {
+    .body {
+      height: 81vh; } }
+  @media only screen and (min-width: 1900px) {
+    .body {
+      height: 89.8vh; } }
   .body.parc-publics img {
-    object-fit: cover;
-    object-position: bottom; }
+    object-fit: cover; }
   .body.stades img {
-    object-fit: cover;
-    object-position: top; }
-    @media only screen and (min-width: 1383px) and (max-width: 1599px) {
-      .body.stades img {
-        object-position: top right; } }
+    object-fit: cover; }
   .body .bg {
     width: 100%;
-    height: 98vh; }
+    height: 100%; }
     .body .bg img {
       width: 100%;
       height: 100%;
-      transform: scale(1.2); }
+      transform: scale(1.18); }
+      @media only screen and (min-width: 1383px) and (max-width: 1599px) {
+        .body .bg img {
+          transform: scale(1.173);
+          transform: scale(1.18); } }
+      @media only screen and (min-width: 1600px) {
+        .body .bg img {
+          transform: scale(1.178); } }
+      @media only screen and (min-width: 1900px) {
+        .body .bg img {
+          transform: scale(1.17); } }
 
 .number {
   position: absolute;
@@ -223,7 +233,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: .2s all ease-in-out; }
   .number span {
     width: 36px;
     height: 36px;
@@ -239,7 +250,8 @@ body {
     font-weight: bold;
     font-size: 18px; }
   .number:hover {
-    border-color: #55B115; }
+    border-color: #55B115;
+    transform: scale(1.2); }
     .number:hover span {
       background-color: #55B115; }
 
@@ -250,248 +262,236 @@ body {
 
 .parc-publics #number-1 {
   bottom: 0%;
-  right: 27.9%; }
+  right: 41.5%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .parc-publics #number-1 {
-      bottom: -1%;
-      right: 25.9%; } }
+      bottom: 2%;
+      right: 41.7%; } }
   @media only screen and (min-width: 1600px) {
     .parc-publics #number-1 {
-      bottom: -1%;
-      right: 28.3%; } }
+      bottom: 3%;
+      right: 41.9%; } }
   @media only screen and (min-width: 1900px) {
     .parc-publics #number-1 {
-      bottom: 0%;
-      right: 28.7%; } }
+      bottom: 4%;
+      right: 42.7%; } }
 .parc-publics #number-2 {
   bottom: 10.2%;
   left: 12.3%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .parc-publics #number-2 {
-      bottom: 8%;
-      left: 8.3%; } }
+      bottom: 11%;
+      left: 12.6%; } }
   @media only screen and (min-width: 1600px) {
     .parc-publics #number-2 {
-      bottom: 8%;
-      left: 12.5%; } }
+      bottom: 11%;
+      left: 13%; } }
   @media only screen and (min-width: 1900px) {
     .parc-publics #number-2 {
-      bottom: 10%;
-      left: 13%; } }
+      bottom: 12%;
+      left: 13.3%; } }
 .parc-publics #number-3 {
-  bottom: 28.5%;
-  left: 57.5%; }
+  bottom: 24.5%;
+  left: 46%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .parc-publics #number-3 {
-      bottom: 24.3%;
-      left: 58.3%; } }
+      bottom: 25.7%;
+      left: 45.8%; } }
   @media only screen and (min-width: 1600px) {
     .parc-publics #number-3 {
-      bottom: 24.5%;
-      left: 57.5%; } }
+      bottom: 26.2%;
+      left: 45.9%; } }
   @media only screen and (min-width: 1900px) {
     .parc-publics #number-3 {
-      bottom: 28.5%;
-      left: 57.5%; } }
+      bottom: 26.9%;
+      left: 46%; } }
 .parc-publics #number-4 {
-  top: 37.5%;
-  right: 24.3%; }
+  top: 46%;
+  right: 39%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .parc-publics #number-4 {
-      top: 47.9%;
-      right: 22%; } }
+      top: 47%;
+      right: 38.8%; } }
   @media only screen and (min-width: 1600px) {
     .parc-publics #number-4 {
       top: 46.9%;
-      right: 24.9%; } }
+      right: 39.2%; } }
   @media only screen and (min-width: 1900px) {
     .parc-publics #number-4 {
-      top: 41.5%;
-      right: 25.4%; } }
+      top: 47.5%;
+      right: 40.1%; } }
 .parc-publics #number-5 {
-  top: 20.5%;
-  right: 9.9%; }
+  top: 32%;
+  right: 29%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .parc-publics #number-5 {
       top: 33.5%;
-      right: 5.9%; } }
+      right: 29%; } }
   @media only screen and (min-width: 1600px) {
     .parc-publics #number-5 {
-      top: 32.9%;
-      right: 10.5%; } }
+      top: 33.9%;
+      right: 29.5%; } }
   @media only screen and (min-width: 1900px) {
     .parc-publics #number-5 {
-      top: 25.5%;
-      right: 10.5%; } }
+      top: 34.5%;
+      right: 29.5%; } }
 .parc-publics #number-6 {
-  bottom: -4.8%;
-  left: 29.3%; }
+  bottom: -19.8px;
+  left: 24.8%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .parc-publics #number-6 {
-      bottom: -4.8%;
-      left: 27.4%; } }
+      bottom: -6px;
+      left: 25.1%; } }
   @media only screen and (min-width: 1600px) {
     .parc-publics #number-6 {
-      bottom: -4.8%;
-      left: 29.7%; } }
+      bottom: -0.8%;
+      left: 25.4%; } }
   @media only screen and (min-width: 1900px) {
     .parc-publics #number-6 {
-      bottom: -3.8%;
-      left: 30.3%; } }
+      bottom: 0%;
+      left: 26%; } }
 .parc-publics #number-7 {
-  top: 65.5%;
-  left: 39.6%; }
+  top: 70%;
+  left: 33.1%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .parc-publics #number-7 {
-      top: 73.3%;
-      left: 38.5%; } }
+      top: 69.3%;
+      left: 33.2%; } }
   @media only screen and (min-width: 1600px) {
     .parc-publics #number-7 {
-      top: 72.5%;
-      left: 39.7%; } }
+      top: 70.2%;
+      left: 33.3%; } }
   @media only screen and (min-width: 1900px) {
     .parc-publics #number-7 {
-      top: 69.5%;
-      left: 39.8%; } }
+      top: 69.8%;
+      left: 33.4%; } }
 .parc-publics #number-8 {
   top: 581px;
   left: 185px; }
 
 .stades #number-1 {
-  top: 10.5%;
-  left: 49.4%; }
+  top: 10.1%;
+  left: 50.4%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .stades #number-1 {
-      top: 9%;
-      left: 49.5%; } }
+      top: 11%;
+      left: 50.5%; } }
   @media only screen and (min-width: 1600px) {
     .stades #number-1 {
-      top: 8%;
-      left: 49.4%; } }
+      top: 11%;
+      left: 50.9%; } }
   @media only screen and (min-width: 1900px) {
     .stades #number-1 {
-      top: 10.5%;
-      left: 49.5%; } }
+      top: 12%;
+      left: 50.9%; } }
 .stades #number-2 {
-  top: 10%;
-  left: 8.5%; }
+  top: 9%;
+  left: 19.9%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .stades #number-2 {
-      top: 8.5%;
-      left: 8.5%; } }
+      top: 10.5%;
+      left: 20%; } }
   @media only screen and (min-width: 1600px) {
     .stades #number-2 {
-      top: 8%;
-      left: 8.5%; } }
-  @media only screen and (min-width: 1900px) {
-    .stades #number-2 {
-      top: 9.5%;
-      left: 8.7%; } }
+      top: 11%;
+      left: 20.4%; } }
 .stades #number-3 {
-  top: 16%;
-  right: 7%; }
+  top: 14%;
+  right: 16.2%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .stades #number-3 {
-      top: 14%;
-      right: 7.3%; } }
+      top: 14.9%;
+      right: 16.3%; } }
   @media only screen and (min-width: 1600px) {
     .stades #number-3 {
-      top: 14%;
-      right: 7.5%; } }
+      top: 15.6%;
+      right: 16.8%; } }
   @media only screen and (min-width: 1900px) {
     .stades #number-3 {
-      top: 17%;
-      right: 7.8%; } }
+      top: 16.6%;
+      right: 17.2%; } }
 .stades #number-4 {
-  top: 60%;
-  left: 34.7%; }
+  top: 48%;
+  left: 39.6%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .stades #number-4 {
-      top: 53%;
-      left: 34.7%; } }
+      top: 49%;
+      left: 39.5%; } }
   @media only screen and (min-width: 1600px) {
     .stades #number-4 {
-      top: 51.5%;
-      left: 35.1%; } }
+      top: 49.3%;
+      left: 39.8%; } }
   @media only screen and (min-width: 1900px) {
     .stades #number-4 {
-      top: 59%;
-      left: 35.4%; } }
+      top: 50%;
+      left: 40.2%; } }
 .stades #number-5 {
-  top: 71%;
-  left: 51.5%; }
+  top: 58%;
+  left: 51.6%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .stades #number-5 {
-      top: 64%;
-      left: 51.5%; } }
+      top: 58%;
+      left: 51.9%; } }
   @media only screen and (min-width: 1600px) {
     .stades #number-5 {
-      top: 61%;
-      left: 51.5%; } }
+      top: 58.6%;
+      left: 51.7%; } }
   @media only screen and (min-width: 1900px) {
     .stades #number-5 {
-      top: 69%;
-      left: 51.6%; } }
+      top: 59.4%;
+      left: 51.9%; } }
 .stades #number-6 {
-  top: 83%;
-  left: 12.4%; }
+  top: 67%;
+  left: 22.3%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .stades #number-6 {
-      top: 74%;
-      left: 12.5%; } }
+      top: 66.5%;
+      left: 22.5%; } }
   @media only screen and (min-width: 1600px) {
     .stades #number-6 {
-      top: 71%;
-      left: 12.4%; } }
+      top: 66.7%;
+      left: 22.7%; } }
   @media only screen and (min-width: 1900px) {
     .stades #number-6 {
-      top: 80%;
-      left: 13%; } }
+      top: 66.9%;
+      left: 23.3%; } }
 .stades #number-7 {
-  top: 52%;
-  left: 8.5%; }
+  top: 43%;
+  left: 19.9%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .stades #number-7 {
-      top: 46.3%;
-      left: 8.5%; } }
+      top: 42.3%;
+      left: 20.2%; } }
   @media only screen and (min-width: 1600px) {
+    .stades #number-7 {
+      top: 43%;
+      left: 20.5%; } }
+  @media only screen and (min-width: 1900px) {
     .stades #number-7 {
       top: 44%;
-      left: 8.5%; } }
-  @media only screen and (min-width: 1900px) {
-    .stades #number-7 {
-      top: 50%;
-      left: 8.5%; } }
+      left: 20.7%; } }
 .stades #number-7-1 {
-  top: 31%;
-  left: 36.6%; }
+  top: 26%;
+  left: 40.9%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .stades #number-7-1 {
       top: 26.6%;
-      left: 36.8%; } }
+      left: 41%; } }
   @media only screen and (min-width: 1600px) {
     .stades #number-7-1 {
-      top: 25%;
-      left: 37%; } }
+      top: 27%;
+      left: 41.2%; } }
   @media only screen and (min-width: 1900px) {
     .stades #number-7-1 {
-      top: 29.3%;
-      left: 37.2%; } }
+      top: 27.6%;
+      left: 41.5%; } }
 .stades #number-8 {
-  top: 48.5%;
-  right: -4.5%; }
-  @media only screen and (min-width: 1383px) and (max-width: 1599px) {
-    .stades #number-8 {
-      top: 43%;
-      right: -4%; } }
-  @media only screen and (min-width: 1600px) {
-    .stades #number-8 {
-      top: 40.5%;
-      right: -3.5%; } }
+  top: 39.5%;
+  right: 8%; }
   @media only screen and (min-width: 1900px) {
     .stades #number-8 {
-      top: 47%;
-      right: -3.5%; } }
+      top: 41%;
+      right: 8.7%; } }
 
 .tooltip {
   width: 220px;
@@ -513,7 +513,7 @@ body {
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
-    line-height: 33px;
+    line-height: 24px;
     text-transform: uppercase;
     text-align: left;
     color: #FFFFFF;
@@ -530,27 +530,32 @@ body {
     margin: 0;
     margin-bottom: 16px; }
   .tooltip .btn {
-    width: 212px;
+    width: 100%;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: none;
     outline: none; }
-    .tooltip .btn.btn-success {
-      width: 100%;
-      height: 46px;
-      background-color: #55B115;
+    .tooltip .btn span {
+      font-family: Source Sans Pro;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 13px;
+      line-height: 16px;
       display: flex;
       align-items: center;
-      justify-content: center; }
+      text-align: center;
+      text-transform: uppercase; }
+    .tooltip .btn.btn-success {
+      background-color: #55B115; }
       .tooltip .btn.btn-success span {
-        font-family: Source Sans Pro;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 13px;
-        line-height: 16px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        text-transform: uppercase;
         color: #FFFFFF; }
+    .tooltip .btn.btn-disabled {
+      background-color: #424242;
+      pointer-events: none; }
+      .tooltip .btn.btn-disabled span {
+        color: #8a8a8a; }
 
 .tippy-popper .tippy-tooltip {
   padding: 0;

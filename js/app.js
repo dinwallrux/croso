@@ -7,6 +7,13 @@ jQuery(document).ready(function ($) {
         let trigger = $('#trigger-sidebar');
         let isCollapsed = $('.sidebar').hasClass('collapsed');
 
+        if(!isCollapsed) {
+            setTimeout(function () {
+                $('.sidebar').addClass('collapsed')
+                trigger.removeClass('back');
+            }, 5000)
+        }
+
         // Remove class if burger menu is not exist for first time
         if (isCollapsed) trigger.removeClass('back');
 
@@ -23,7 +30,7 @@ jQuery(document).ready(function ($) {
             })
         }
 
-        // Trigger sidebar to show by click
+        // Trigger sidebar to appear by click
         $('#trigger-sidebar i').on('click', function (e) {
             $('.sidebar').toggleClass('collapsed');
             trigger.toggleClass('back')
@@ -101,6 +108,7 @@ jQuery(document).ready(function ($) {
 
         if($('.parc-publics').length > 0) {
             par_publics.forEach(function (data) {
+                let isDisabledButton = data.link == '#' ? 'btn-disabled' : 'btn-success';
                 $('.parc-publics .bg').append(`
                     <div class="numbers" >
                         <div id="${data.idButton}" class="number">
@@ -112,7 +120,7 @@ jQuery(document).ready(function ($) {
                                 <p>${data.tooltipText}</p>
                             </div>
                             <div class="tooltip-footer">
-                                <a href="${data.link}" class="btn btn-success">
+                                <a href="${data.link}" class="btn ${isDisabledButton}">
                                     <span>${data.tooltipButton}</span>
                                 </a>
                             </div>
@@ -120,6 +128,7 @@ jQuery(document).ready(function ($) {
                     </div>
                 `);
             })
+
         }
 
         let stades = [
@@ -246,7 +255,14 @@ jQuery(document).ready(function ($) {
                 placement: 'auto',
                 trigger: 'click',
                 interactive: true,
+                onShown() {
+                    $('.btn-disabled')
+                        .closest('.tippy-popper[x-placement^=top]')
+                        .find('.tippy-arrow')
+                        .css('border-top', '8px solid #424242');
+                }
             });
+
         })
     }();
 
@@ -257,6 +273,5 @@ jQuery(document).ready(function ($) {
             relativeInput: true,
             pointerEvents: true,
         });
-        parallaxInstance.limit(true, false)
     }();
 })
