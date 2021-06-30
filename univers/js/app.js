@@ -274,4 +274,23 @@ jQuery(document).ready(function ($) {
             pointerEvents: true,
         });
     }();
+
+    // Random page
+    !function () {
+        const baseUrl =  location.origin;
+        const endpoints = ["", "stades.html"];
+        const rand_endpoint = endpoints[Math.floor(Math.random() * endpoints.length)];
+
+        const newUrl = baseUrl + '/univers/' + rand_endpoint;
+
+        if (!sessionStorage.getItem("random_url")) {
+            location.href = newUrl;
+
+            sessionStorage.setItem("random_url", newUrl);
+        }
+
+        setTimeout(function(){
+            sessionStorage.removeItem("random_url")
+        }, 10000)
+    }();
 })
