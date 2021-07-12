@@ -2,10 +2,10 @@
 session_start();
 $_SESSION['page_name'] = 'parc-publics';
 
-if($_SESSION['current_page'] == 2) {
-    header('Location: ./stades.php');
-    exit;
-}
+// if($_SESSION['current_page'] == 2) {
+//     header('Location: ./stades.php');
+//     exit;
+// }
 ?>
 
 <!DOCTYPE html>
