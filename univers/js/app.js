@@ -276,21 +276,21 @@ jQuery(document).ready(function ($) {
     }();
 
     // Random page
-    !function () {
-        const baseUrl =  location.origin;
-        const endpoints = ["", "stades.html"];
-        const rand_endpoint = endpoints[Math.floor(Math.random() * endpoints.length)];
+    // !function () {
+    //     const baseUrl =  location.origin;
+    //     const endpoints = ["", "stades.php"];
+    //     const rand_endpoint = endpoints[Math.floor(Math.random() * endpoints.length)];
 
-        const newUrl = baseUrl + '/univers/' + rand_endpoint;
+    //     const newUrl = baseUrl + '/univers/' + rand_endpoint;
 
-        if (!sessionStorage.getItem("random_url")) {
-            location.href = newUrl;
+    //     if (!sessionStorage.getItem("random_url")) {
+    //         window.location = newUrl;
 
-            sessionStorage.setItem("random_url", newUrl);
-        }
+    //         sessionStorage.setItem("random_url", newUrl);
+    //     }
 
-        setTimeout(function(){
-            sessionStorage.removeItem("random_url")
-        }, 10000)
-    }();
+    //     setTimeout(function(){
+    //         sessionStorage.removeItem("random_url")
+    //     }, 10000)
+    // }();
 })
