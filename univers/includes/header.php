@@ -1,6 +1,5 @@
 <?php 
-$page_name =  $_SESSION['page_name'];
-if($page_name == 'parc-publics') {
+if($_SESSION['page_name'] == 'parc-publics') {
     $url = 'stades.php';
 } else {
     $url = 'parc-publics.php';
@@ -26,7 +25,7 @@ if($page_name == 'parc-publics') {
         </div>
         <div class="title">
             <p>Les univers CROSO FRANCE</p>
-            <h2>PARCS PUBLICS</h2>
+            <h2><?php echo $_SESSION['page_name'] ?></h2>
         </div>
         <div class="arrow arrow-right">
             <a href="<?php echo $url ?>">

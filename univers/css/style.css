@@ -68,6 +68,7 @@ body {
     align-items: center;
     justify-content: center; }
   .wrap-title h2 {
+    text-transform: uppercase;
     font-family: Palanquin;
     font-style: normal;
     font-weight: bold;
@@ -95,7 +96,7 @@ body {
   transition: .2s all ease-in-out; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .sidebar {
-      height: 89vh; } }
+      height: 90vh; } }
   @media only screen and (min-width: 1600px) {
     .sidebar {
       height: 88.9vh; } }
@@ -193,10 +194,10 @@ body {
   overflow: hidden; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .body {
-      height: 73vh; } }
+      height: 90vh; } }
   @media only screen and (min-width: 1600px) {
     .body {
-      height: 81vh; } }
+      height: 90vh; } }
   @media only screen and (min-width: 1900px) {
     .body {
       height: 89.8vh; } }
@@ -210,11 +211,10 @@ body {
     .body .bg img {
       width: 100%;
       height: 100%;
-      transform: scale(1.18); }
+      transform: scale(1.187); }
       @media only screen and (min-width: 1383px) and (max-width: 1599px) {
         .body .bg img {
-          transform: scale(1.173);
-          transform: scale(1.18); } }
+          transform: scale(1.17); } }
       @media only screen and (min-width: 1600px) {
         .body .bg img {
           transform: scale(1.178); } }
@@ -261,110 +261,110 @@ body {
     background-color: #55B115; }
 
 .parc-publics #number-1 {
-  bottom: 0%;
-  right: 41.5%; }
+  bottom: 0.7%;
+  right: 41.56%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .parc-publics #number-1 {
-      bottom: 2%;
-      right: 41.7%; } }
+      bottom: 3.5%;
+      right: 40.6%; } }
   @media only screen and (min-width: 1600px) {
     .parc-publics #number-1 {
-      bottom: 3%;
-      right: 41.9%; } }
+      bottom: 3.2%;
+      right: 41.4%; } }
   @media only screen and (min-width: 1900px) {
     .parc-publics #number-1 {
-      bottom: 4%;
-      right: 42.7%; } }
+      bottom: 4.3%;
+      right: 42.1%; } }
 .parc-publics #number-2 {
-  bottom: 10.2%;
-  left: 12.3%; }
+  bottom: 10.6%;
+  left: 12.7%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .parc-publics #number-2 {
-      bottom: 11%;
-      left: 12.6%; } }
+      bottom: 12.4%;
+      left: 4.5%; } }
   @media only screen and (min-width: 1600px) {
     .parc-publics #number-2 {
-      bottom: 11%;
-      left: 13%; } }
+      bottom: 12.2%;
+      left: 9%; } }
   @media only screen and (min-width: 1900px) {
     .parc-publics #number-2 {
-      bottom: 12%;
-      left: 13.3%; } }
+      bottom: 12.5%;
+      left: 9.8%; } }
 .parc-publics #number-3 {
-  bottom: 24.5%;
-  left: 46%; }
+  bottom: 25%;
+  left: 46.54%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .parc-publics #number-3 {
-      bottom: 25.7%;
-      left: 45.8%; } }
-  @media only screen and (min-width: 1600px) {
-    .parc-publics #number-3 {
-      bottom: 26.2%;
+      bottom: 26.7%;
       left: 45.9%; } }
+  @media only screen and (min-width: 1600px) {
+    .parc-publics #number-3 {
+      bottom: 26.6%;
+      left: 46.2%; } }
   @media only screen and (min-width: 1900px) {
     .parc-publics #number-3 {
-      bottom: 26.9%;
-      left: 46%; } }
+      bottom: 27.1%;
+      left: 46.2%; } }
 .parc-publics #number-4 {
-  top: 46%;
-  right: 39%; }
+  top: 46.7%;
+  right: 38.8%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
-    .parc-publics #number-4 {
-      top: 47%;
-      right: 38.8%; } }
-  @media only screen and (min-width: 1600px) {
-    .parc-publics #number-4 {
-      top: 46.9%;
-      right: 39.2%; } }
-  @media only screen and (min-width: 1900px) {
     .parc-publics #number-4 {
       top: 47.5%;
-      right: 40.1%; } }
+      right: 37.4%; } }
+  @media only screen and (min-width: 1600px) {
+    .parc-publics #number-4 {
+      top: 47.5%;
+      right: 38.6%; } }
+  @media only screen and (min-width: 1900px) {
+    .parc-publics #number-4 {
+      top: 48%;
+      right: 39.3%; } }
 .parc-publics #number-5 {
   top: 32%;
   right: 29%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .parc-publics #number-5 {
-      top: 33.5%;
-      right: 29%; } }
+      top: 34.2%;
+      right: 24.6%; } }
   @media only screen and (min-width: 1600px) {
     .parc-publics #number-5 {
-      top: 33.9%;
-      right: 29.5%; } }
+      top: 34%;
+      right: 27%; } }
   @media only screen and (min-width: 1900px) {
     .parc-publics #number-5 {
-      top: 34.5%;
-      right: 29.5%; } }
+      top: 35%;
+      right: 27.8%; } }
 .parc-publics #number-6 {
-  bottom: -19.8px;
-  left: 24.8%; }
+  bottom: -11.9px;
+  left: 24.7%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .parc-publics #number-6 {
-      bottom: -6px;
-      left: 25.1%; } }
+      bottom: 0.7%;
+      left: 19.75%; } }
   @media only screen and (min-width: 1600px) {
     .parc-publics #number-6 {
-      bottom: -0.8%;
-      left: 25.4%; } }
+      bottom: 0.9%;
+      left: 22.7%; } }
   @media only screen and (min-width: 1900px) {
     .parc-publics #number-6 {
-      bottom: 0%;
-      left: 26%; } }
+      bottom: 1.7%;
+      left: 23.67%; } }
 .parc-publics #number-7 {
-  top: 70%;
-  left: 33.1%; }
+  top: 69.6%;
+  left: 33%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .parc-publics #number-7 {
-      top: 69.3%;
-      left: 33.2%; } }
+      top: 69.7%;
+      left: 29.3%; } }
   @media only screen and (min-width: 1600px) {
     .parc-publics #number-7 {
       top: 70.2%;
-      left: 33.3%; } }
+      left: 31.3%; } }
   @media only screen and (min-width: 1900px) {
     .parc-publics #number-7 {
-      top: 69.8%;
-      left: 33.4%; } }
+      top: 70.4%;
+      left: 31.7%; } }
 .parc-publics #number-8 {
   top: 581px;
   left: 185px; }
@@ -374,8 +374,8 @@ body {
   left: 50.4%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .stades #number-1 {
-      top: 11%;
-      left: 50.5%; } }
+      top: 11.3%;
+      left: 50.7%; } }
   @media only screen and (min-width: 1600px) {
     .stades #number-1 {
       top: 11%;
@@ -385,116 +385,128 @@ body {
       top: 12%;
       left: 50.9%; } }
 .stades #number-2 {
-  top: 9%;
-  left: 19.9%; }
+  top: 9.4%;
+  left: 19.5%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .stades #number-2 {
-      top: 10.5%;
-      left: 20%; } }
+      top: 11.5%;
+      left: 13%; } }
   @media only screen and (min-width: 1600px) {
     .stades #number-2 {
-      top: 11%;
-      left: 20.4%; } }
+      top: 11.2%;
+      left: 16.5%; } }
+  @media only screen and (min-width: 1900px) {
+    .stades #number-2 {
+      top: 11.6%;
+      left: 17.4%; } }
 .stades #number-3 {
   top: 14%;
   right: 16.2%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .stades #number-3 {
-      top: 14.9%;
-      right: 16.3%; } }
+      top: 16%;
+      right: 9%; } }
   @media only screen and (min-width: 1600px) {
     .stades #number-3 {
-      top: 15.6%;
-      right: 16.8%; } }
+      top: 15.9%;
+      right: 13%; } }
   @media only screen and (min-width: 1900px) {
     .stades #number-3 {
       top: 16.6%;
-      right: 17.2%; } }
+      right: 14.3%; } }
 .stades #number-4 {
   top: 48%;
   left: 39.6%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .stades #number-4 {
-      top: 49%;
-      left: 39.5%; } }
+      top: 49.5%;
+      left: 37.6%; } }
   @media only screen and (min-width: 1600px) {
     .stades #number-4 {
-      top: 49.3%;
-      left: 39.8%; } }
+      top: 49.8%;
+      left: 38.8%; } }
   @media only screen and (min-width: 1900px) {
     .stades #number-4 {
-      top: 50%;
-      left: 40.2%; } }
+      top: 50.8%;
+      left: 39.2%; } }
 .stades #number-5 {
   top: 58%;
   left: 51.6%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .stades #number-5 {
-      top: 58%;
-      left: 51.9%; } }
+      top: 58.2%;
+      left: 52.5%; } }
   @media only screen and (min-width: 1600px) {
     .stades #number-5 {
       top: 58.6%;
-      left: 51.7%; } }
+      left: 52.5%; } }
   @media only screen and (min-width: 1900px) {
     .stades #number-5 {
-      top: 59.4%;
-      left: 51.9%; } }
+      top: 58.7%;
+      left: 52.5%; } }
 .stades #number-6 {
-  top: 67%;
-  left: 22.3%; }
+  top: 68%;
+  left: 22.5%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .stades #number-6 {
-      top: 66.5%;
-      left: 22.5%; } }
+      top: 67.5%;
+      left: 17%; } }
   @media only screen and (min-width: 1600px) {
     .stades #number-6 {
-      top: 66.7%;
-      left: 22.7%; } }
+      top: 68%;
+      left: 20.3%; } }
   @media only screen and (min-width: 1900px) {
     .stades #number-6 {
-      top: 66.9%;
-      left: 23.3%; } }
+      top: 67.9%;
+      left: 21.1%; } }
 .stades #number-7 {
-  top: 43%;
-  left: 19.9%; }
+  top: 41.7%;
+  left: 18.9%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .stades #number-7 {
-      top: 42.3%;
-      left: 20.2%; } }
+      top: 43.7%;
+      left: 12.5%; } }
   @media only screen and (min-width: 1600px) {
     .stades #number-7 {
       top: 43%;
-      left: 20.5%; } }
+      left: 15.9%; } }
   @media only screen and (min-width: 1900px) {
     .stades #number-7 {
       top: 44%;
-      left: 20.7%; } }
+      left: 17%; } }
 .stades #number-7-1 {
   top: 26%;
   left: 40.9%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .stades #number-7-1 {
-      top: 26.6%;
-      left: 41%; } }
+      top: 27.5%;
+      left: 39.2%; } }
   @media only screen and (min-width: 1600px) {
     .stades #number-7-1 {
-      top: 27%;
-      left: 41.2%; } }
+      top: 27.5%;
+      left: 40.2%; } }
   @media only screen and (min-width: 1900px) {
     .stades #number-7-1 {
-      top: 27.6%;
-      left: 41.5%; } }
+      top: 27.9%;
+      left: 40.7%; } }
 .stades #number-8 {
   top: 39.5%;
   right: 8%; }
+  @media only screen and (min-width: 1383px) and (max-width: 1599px) {
+    .stades #number-8 {
+      top: 41.5%;
+      right: -1%; } }
+  @media only screen and (min-width: 1600px) {
+    .stades #number-8 {
+      top: 40.8%;
+      right: 3.5%; } }
   @media only screen and (min-width: 1900px) {
     .stades #number-8 {
-      top: 41%;
-      right: 8.7%; } }
+      top: 42%;
+      right: 4.7%; } }
 
 .tooltip {
-  width: 220px;
+  width: 240px;
   position: relative;
   background-color: #000000;
   box-sizing: border-box;
@@ -512,8 +524,8 @@ body {
     font-family: Palanquin;
     font-style: normal;
     font-weight: 300;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 22px;
+    line-height: 140%;
     text-transform: uppercase;
     text-align: left;
     color: #FFFFFF;
@@ -523,8 +535,8 @@ body {
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: normal;
-    font-size: 11px;
-    line-height: 14px;
+    font-size: 14px;
+    line-height: 130%;
     color: #FFFFFF;
     text-align: left;
     margin: 0;
@@ -541,8 +553,8 @@ body {
       font-family: Source Sans Pro;
       font-style: normal;
       font-weight: bold;
-      font-size: 13px;
-      line-height: 16px;
+      font-size: 14px;
+      line-height: 120%;
       display: flex;
       align-items: center;
       text-align: center;

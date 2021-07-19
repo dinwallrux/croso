@@ -90,6 +90,7 @@ body {
         justify-content: center;
     }
     h2 {
+        text-transform: uppercase;
         font-family: Palanquin;
         font-style: normal;
         font-weight: bold;
@@ -118,7 +119,7 @@ body {
     box-sizing: border-box;
     transition: .2s all ease-in-out;
     @include desktop-medium() {
-        height: 89vh;
+        height: 90vh;
     }
     @include desktop-large {
         height: 88.9vh;
@@ -237,10 +238,10 @@ body {
     height: 89.8vh;
     overflow: hidden;
     @include desktop-medium() {
-        height: 73vh;
+        height: 90vh;
     }
     @include desktop-large() {
-        height: 81vh;
+        height: 90vh;
     }
     @include full-hd() {
         height: 89.8vh;
@@ -261,10 +262,9 @@ body {
         img {
             width: 100%;
             height: 100%;
-            transform: scale(1.18);
+            transform: scale(1.187);
             @include desktop-medium() {
-                transform: scale(1.173);
-                transform: scale(1.18);
+                transform: scale(1.17);
             }
             @include desktop-large() {
                 transform: scale(1.178);
@@ -323,115 +323,115 @@ body {
 
 .parc-publics {
     #number-1 {
-        bottom: 0%;
-        right: 41.5%;
+        bottom: 0.7%;
+        right: 41.56%;
         @include desktop-medium() {
-            bottom: 2%;
-            right: 41.7%;
+            bottom: 3.5%;
+            right: 40.6%;
         }
         @include desktop-large() {
-            bottom: 3%;
-            right: 41.9%;
+            bottom: 3.2%;
+            right: 41.4%;
         }
         @include full-hd() {
-            bottom: 4%;
-            right: 42.7%;
+            bottom: 4.3%;
+            right: 42.1%;
         }
     }
     #number-2 {
-        bottom: 10.2%;
-        left: 12.3%;
+        bottom: 10.6%;
+        left: 12.7%;
         @include desktop-medium() {
-            bottom: 11%;
-            left: 12.6%;
+            bottom: 12.4%;
+            left: 4.5%;
         }
         @include desktop-large() {
-            bottom: 11%;
-            left: 13%;
+            bottom: 12.2%;
+            left: 9%;
         }
         @include full-hd() {
-            bottom: 12%;
-            left: 13.3%;
+            bottom: 12.5%;
+            left: 9.8%;
         }
     }
     #number-3 {
-        bottom: 24.5%;
-        left: 46%;
+        bottom: 25%;
+        left: 46.54%;
         @include desktop-medium() {
-            bottom: 25.7%;
-            left: 45.8%;
-        }
-        @include desktop-large() {
-            bottom: 26.2%;
+            bottom: 26.7%;
             left: 45.9%;
         }
+        @include desktop-large() {
+            bottom: 26.6%;
+            left: 46.2%;
+        }
         @include full-hd() {
-            bottom: 26.9%;
-            left: 46%;
+            bottom: 27.1%;
+            left: 46.2%;
         }
     }
     #number-4 {
-        top: 46%;
-        right: 39%;
+        top: 46.7%;
+        right: 38.8%;
         @include desktop-medium() {
-            top: 47%;
-            right: 38.8%;
+            top: 47.5%;
+            right: 37.4%;
         }
         @include desktop-large() {
-            top: 46.9%;
-            right: 39.2%;
+            top: 47.5%;
+            right: 38.6%;
         }
         @include full-hd() {
-            top: 47.5%;
-            right: 40.1%;
+            top: 48%;
+            right: 39.3%;
         }
     }
     #number-5 {
         top: 32%;
         right: 29%;
         @include desktop-medium() {
-            top: 33.5%;
-            right: 29%;
+            top: 34.2%;
+            right: 24.6%;
         }
         @include desktop-large() {
-            top: 33.9%;
-            right: 29.5%;
+            top: 34%;
+            right: 27%;
         }
         @include full-hd() {
-            top: 34.5%;
-            right: 29.5%;
+            top: 35%;
+            right: 27.8%;
         }
     }
     #number-6 {
-        bottom: -19.8px;
-        left: 24.8%;
+        bottom: -11.9px;
+        left: 24.7%;
         @include desktop-medium() {
-            bottom: -6px;
-            left: 25.1%;
+            bottom: 0.7%;
+            left: 19.75%;
         }
         @include desktop-large() {
-            bottom: -0.8%;
-            left: 25.4%;
+            bottom: 0.9%;
+            left: 22.7%;
         }
         @include full-hd() {
-            bottom: 0%;
-            left: 26%;
+            bottom: 1.7%;
+            left: 23.67%;
         }
     }
     #number-7 {
-        top: 70%;
-        left: 33.1%;
+        top: 69.6%;
+        left: 33%;
         @include desktop-medium() {
-            top: 69.3%;
-            left: 33.2%;
+            top: 69.7%;
+            left: 29.3%;
         }
         @include desktop-large() {
             top: 70.2%;
-            left: 33.3%;
+            left: 31.3%;
         }
         @include full-hd() {
-            top: 69.8%;
-            left: 33.4%;
+            top: 70.4%;
+            left: 31.7%;
         }
     }
     #number-8 {
@@ -445,8 +445,8 @@ body {
         top: 10.1%;
         left: 50.4%;
         @include desktop-medium() {
-            top: 11%;
-            left: 50.5%;
+            top: 11.3%;
+            left: 50.7%;
         }
         @include desktop-large() {
             top: 11%;
@@ -458,125 +458,137 @@ body {
         }
     }
     #number-2 {
-        top: 9%;
-        left: 19.9%;
+        top: 9.4%;
+        left: 19.5%;
         @include desktop-medium() {
-            top: 10.5%;
-            left: 20%;
+            top: 11.5%;
+            left: 13%;
         }
         @include desktop-large() {
-            top: 11%;
-            left: 20.4%;
+            top: 11.2%;
+            left: 16.5%;
+        }
+        @include full-hd() {
+            top: 11.6%;
+            left: 17.4%;
         }
     }
     #number-3 {
         top: 14%;
         right: 16.2%;
         @include desktop-medium() {
-            top: 14.9%;
-            right: 16.3%;
+            top: 16%;
+            right: 9%;
         }
         @include desktop-large() {
-            top: 15.6%;
-            right: 16.8%;
+            top: 15.9%;
+            right: 13%;
         }
         @include full-hd() {
             top: 16.6%;
-            right: 17.2%;
+            right: 14.3%;
         }
     }
     #number-4 {
         top: 48%;
         left: 39.6%;
         @include desktop-medium() {
-            top: 49%;
-            left: 39.5%;
+            top: 49.5%;
+            left: 37.6%;
         }
         @include desktop-large() {
-            top: 49.3%;
-            left: 39.8%;
+            top: 49.8%;
+            left: 38.8%;
         }
         @include full-hd() {
-            top: 50%;
-            left: 40.2%;
+            top: 50.8%;
+            left: 39.2%;
         }
     }
     #number-5 {
         top: 58%;
         left: 51.6%;
         @include desktop-medium() {
-            top: 58%;
-            left: 51.9%;
+            top: 58.2%;
+            left: 52.5%;
         }
         @include desktop-large() {
             top: 58.6%;
-            left: 51.7%;
+            left: 52.5%;
         }
         @include full-hd() {
-            top: 59.4%;
-            left: 51.9%;
+            top: 58.7%;
+            left: 52.5%;
         }
     }
     #number-6 {
-        top: 67%;
-        left: 22.3%;
+        top: 68%;
+        left: 22.5%;
         @include desktop-medium() {
-            top: 66.5%;
-            left: 22.5%;
+            top: 67.5%;
+            left: 17%;
         }
         @include desktop-large() {
-            top: 66.7%;
-            left: 22.7%;
+            top: 68%;
+            left: 20.3%;
         }
         @include full-hd() {
-            top: 66.9%;
-            left: 23.3%;
+            top: 67.9%;
+            left: 21.1%;
         }
     }
     #number-7 {
-        top: 43%;
-        left: 19.9%;
+        top: 41.7%;
+        left: 18.9%;
         @include desktop-medium() {
-            top: 42.3%;
-            left: 20.2%;
+            top: 43.7%;
+            left: 12.5%;
         }
         @include desktop-large() {
             top: 43%;
-            left: 20.5%;
+            left: 15.9%;
         }
         @include full-hd() {
             top: 44%;
-            left: 20.7%;
+            left: 17%;
         }
     }
     #number-7-1 {
         top: 26%;
         left: 40.9%;
         @include desktop-medium() {
-            top: 26.6%;
-            left: 41%;
+            top: 27.5%;
+            left: 39.2%;
         }
         @include desktop-large() {
-            top: 27%;
-            left: 41.2%;
+            top: 27.5%;
+            left: 40.2%;
         }
         @include full-hd() {
-            top: 27.6%;
-            left: 41.5%;
+            top: 27.9%;
+            left: 40.7%;
         }
     }
     #number-8 {
         top: 39.5%;
         right: 8%;
+        @include desktop-medium() {
+            top: 41.5%;
+            right: -1%;
+        }
+        @include desktop-large() {
+            top: 40.8%;
+            right: 3.5%;
+        }
         @include full-hd() {
-            top: 41%;
-            right: 8.7%;
+            top: 42%;
+            right: 4.7%;
         }
     }
 }
 
 .tooltip {
-    width: 220px;
+    width: 240px;
     position: relative;
     background-color: $black;
     box-sizing: border-box;
@@ -610,8 +622,8 @@ body {
         font-family: Palanquin;
         font-style: normal;
         font-weight: 300;
-        font-size: 18px;
-        line-height: 24px;
+        font-size: 22px;
+        line-height: 140%;
         text-transform: uppercase;
         text-align: left;
         color: #FFFFFF;
@@ -622,8 +634,8 @@ body {
         font-family: Source Sans Pro;
         font-style: normal;
         font-weight: normal;
-        font-size: 11px;
-        line-height: 14px;
+        font-size: 14px;
+        line-height: 130%;
         color: #FFFFFF;
         text-align: left;
         margin: 0;
@@ -642,8 +654,8 @@ body {
             font-family: Source Sans Pro;
             font-style: normal;
             font-weight: bold;
-            font-size: 13px;
-            line-height: 16px;
+            font-size: 14px;
+            line-height: 120%;
             display: flex;
             align-items: center;
             text-align: center;
