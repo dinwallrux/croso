@@ -25,7 +25,7 @@ $_SESSION['page_name'] = 'parc-publics';
 
         <div id="scene" class="body parc-publics">
             <div class="bg" data-depth="0.7">
-                <img src="./img/croso_parc.png" alt="">
+                <img src="./img/parc-green-border-min.png" alt="">
             </div>
         </div>
     </div>

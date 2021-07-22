@@ -261,35 +261,35 @@ body {
     background-color: #55B115; }
 
 .parc-publics #number-1 {
-  bottom: 0.7%;
-  right: 41.56%; }
+  bottom: 0.5%;
+  right: 41.6%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .parc-publics #number-1 {
-      bottom: 3.5%;
-      right: 40.6%; } }
+      bottom: 3.4%;
+      right: 40.5%; } }
   @media only screen and (min-width: 1600px) {
     .parc-publics #number-1 {
-      bottom: 3.2%;
-      right: 41.4%; } }
+      bottom: 3%;
+      right: 41.5%; } }
   @media only screen and (min-width: 1900px) {
     .parc-publics #number-1 {
-      bottom: 4.3%;
+      bottom: 3.3%;
       right: 42.1%; } }
 .parc-publics #number-2 {
-  bottom: 10.6%;
-  left: 12.7%; }
+  bottom: 5.6%;
+  left: 11.7%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .parc-publics #number-2 {
-      bottom: 12.4%;
-      left: 4.5%; } }
+      bottom: 8.4%;
+      left: 3.5%; } }
   @media only screen and (min-width: 1600px) {
     .parc-publics #number-2 {
-      bottom: 12.2%;
-      left: 9%; } }
+      bottom: 8.2%;
+      left: 8%; } }
   @media only screen and (min-width: 1900px) {
     .parc-publics #number-2 {
-      bottom: 12.5%;
-      left: 9.8%; } }
+      bottom: 8.5%;
+      left: 8.9%; } }
 .parc-publics #number-3 {
   bottom: 25%;
   left: 46.54%; }
@@ -307,49 +307,49 @@ body {
       left: 46.2%; } }
 .parc-publics #number-4 {
   top: 46.7%;
-  right: 38.8%; }
+  right: 39.9%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .parc-publics #number-4 {
       top: 47.5%;
-      right: 37.4%; } }
+      right: 38.3%; } }
   @media only screen and (min-width: 1600px) {
     .parc-publics #number-4 {
       top: 47.5%;
-      right: 38.6%; } }
+      right: 39.4%; } }
   @media only screen and (min-width: 1900px) {
     .parc-publics #number-4 {
       top: 48%;
-      right: 39.3%; } }
+      right: 40%; } }
 .parc-publics #number-5 {
-  top: 32%;
+  top: 34%;
   right: 29%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .parc-publics #number-5 {
-      top: 34.2%;
+      top: 36.2%;
       right: 24.6%; } }
   @media only screen and (min-width: 1600px) {
     .parc-publics #number-5 {
-      top: 34%;
+      top: 36%;
       right: 27%; } }
   @media only screen and (min-width: 1900px) {
     .parc-publics #number-5 {
-      top: 35%;
+      top: 37%;
       right: 27.8%; } }
 .parc-publics #number-6 {
-  bottom: -11.9px;
-  left: 24.7%; }
+  bottom: -15.9px;
+  left: 24.9%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .parc-publics #number-6 {
-      bottom: 0.7%;
-      left: 19.75%; } }
+      bottom: 0.3%;
+      left: 20%; } }
   @media only screen and (min-width: 1600px) {
     .parc-publics #number-6 {
-      bottom: 0.9%;
-      left: 22.7%; } }
+      bottom: 0%;
+      left: 23%; } }
   @media only screen and (min-width: 1900px) {
     .parc-publics #number-6 {
-      bottom: 1.7%;
-      left: 23.67%; } }
+      bottom: 1%;
+      left: 24%; } }
 .parc-publics #number-7 {
   top: 69.6%;
   left: 33%; }
@@ -385,35 +385,35 @@ body {
       top: 12%;
       left: 50.9%; } }
 .stades #number-2 {
-  top: 9.4%;
-  left: 19.5%; }
+  top: 8.4%;
+  left: 20.5%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .stades #number-2 {
-      top: 11.5%;
-      left: 13%; } }
+      top: 10.5%;
+      left: 14%; } }
   @media only screen and (min-width: 1600px) {
+    .stades #number-2 {
+      top: 10.7%;
+      left: 17.3%; } }
+  @media only screen and (min-width: 1900px) {
     .stades #number-2 {
       top: 11.2%;
-      left: 16.5%; } }
-  @media only screen and (min-width: 1900px) {
-    .stades #number-2 {
-      top: 11.6%;
-      left: 17.4%; } }
+      left: 18.2%; } }
 .stades #number-3 {
   top: 14%;
-  right: 16.2%; }
+  right: 17.2%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .stades #number-3 {
-      top: 16%;
-      right: 9%; } }
+      top: 16.9%;
+      right: 10.3%; } }
   @media only screen and (min-width: 1600px) {
     .stades #number-3 {
-      top: 15.9%;
-      right: 13%; } }
+      top: 16.6%;
+      right: 14%; } }
   @media only screen and (min-width: 1900px) {
     .stades #number-3 {
-      top: 16.6%;
-      right: 14.3%; } }
+      top: 18%;
+      right: 15%; } }
 .stades #number-4 {
   top: 48%;
   left: 39.6%; }
@@ -445,35 +445,35 @@ body {
       top: 58.7%;
       left: 52.5%; } }
 .stades #number-6 {
-  top: 68%;
-  left: 22.5%; }
+  top: 66.5%;
+  left: 22.1%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .stades #number-6 {
-      top: 67.5%;
-      left: 17%; } }
+      top: 66.2%;
+      left: 16.3%; } }
   @media only screen and (min-width: 1600px) {
     .stades #number-6 {
-      top: 68%;
-      left: 20.3%; } }
+      top: 66%;
+      left: 19.6%; } }
   @media only screen and (min-width: 1900px) {
     .stades #number-6 {
-      top: 67.9%;
-      left: 21.1%; } }
+      top: 66.4%;
+      left: 20.6%; } }
 .stades #number-7 {
-  top: 41.7%;
-  left: 18.9%; }
+  top: 42.7%;
+  left: 19.9%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .stades #number-7 {
-      top: 43.7%;
-      left: 12.5%; } }
+      top: 44%;
+      left: 13.5%; } }
   @media only screen and (min-width: 1600px) {
-    .stades #number-7 {
-      top: 43%;
-      left: 15.9%; } }
-  @media only screen and (min-width: 1900px) {
     .stades #number-7 {
       top: 44%;
       left: 17%; } }
+  @media only screen and (min-width: 1900px) {
+    .stades #number-7 {
+      top: 45%;
+      left: 18%; } }
 .stades #number-7-1 {
   top: 26%;
   left: 40.9%; }
@@ -490,20 +490,20 @@ body {
       top: 27.9%;
       left: 40.7%; } }
 .stades #number-8 {
-  top: 39.5%;
-  right: 8%; }
+  top: 39%;
+  right: 8.5%; }
   @media only screen and (min-width: 1383px) and (max-width: 1599px) {
     .stades #number-8 {
-      top: 41.5%;
-      right: -1%; } }
+      top: 40.5%;
+      right: 0%; } }
   @media only screen and (min-width: 1600px) {
     .stades #number-8 {
-      top: 40.8%;
-      right: 3.5%; } }
+      top: 40%;
+      right: 4.5%; } }
   @media only screen and (min-width: 1900px) {
     .stades #number-8 {
-      top: 42%;
-      right: 4.7%; } }
+      top: 41%;
+      right: 5.9%; } }
 
 .tooltip {
   width: 240px;

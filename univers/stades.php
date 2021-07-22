@@ -25,7 +25,7 @@ $_SESSION['page_name'] = 'stades';
 
         <div id="scene" class="body stades">
             <div class="bg" data-depth="0.7">
-                <img src="./img/croso_stade.png" alt="">
+                <img src="./img/stade-green-border-min.png" alt="">
             </div>
         </div>
     </div>
