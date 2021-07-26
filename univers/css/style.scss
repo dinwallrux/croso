@@ -122,7 +122,7 @@ body {
         height: 90vh;
     }
     @include desktop-large {
-        height: 88.9vh;
+        height: 90vh;
     }
     @include full-hd() {
         height: 89.7vh;
@@ -326,16 +326,16 @@ body {
         bottom: 0.5%;
         right: 41.6%;
         @include desktop-medium() {
-            bottom: 3.4%;
-            right: 40.5%;
+            bottom: 3%;
+            right: 41.34%;
         }
         @include desktop-large() {
-            bottom: 3%;
-            right: 41.5%;
+            bottom: 2.5%;
+            right: 42.14%;
         }
         @include full-hd() {
-            bottom: 3.3%;
-            right: 42.1%;
+            bottom: 3.6%;
+            right: 42.7%;
         }
     }
     #number-2 {
@@ -343,63 +343,63 @@ body {
         left: 11.7%;
         @include desktop-medium() {
             bottom: 8.4%;
-            left: 3.5%;
+            left: 8.5%;
         }
         @include desktop-large() {
             bottom: 8.2%;
-            left: 8%;
+            left: 12.4%;
         }
         @include full-hd() {
-            bottom: 8.5%;
-            left: 8.9%;
+            bottom: 9.5%;
+            left: 12.9%;
         }
     }
     #number-3 {
         bottom: 25%;
         left: 46.54%;
         @include desktop-medium() {
-            bottom: 26.7%;
-            left: 45.9%;
+            bottom: 26.3%;
+            left: 46.2%;
         }
         @include desktop-large() {
-            bottom: 26.6%;
-            left: 46.2%;
+            bottom: 26%;
+            left: 46.6%;
         }
         @include full-hd() {
-            bottom: 27.1%;
-            left: 46.2%;
+            bottom: 27%;
+            left: 46.6%;
         }
     }
     #number-4 {
         top: 46.7%;
         right: 39.9%;
         @include desktop-medium() {
-            top: 47.5%;
-            right: 38.3%;
-        }
-        @include desktop-large() {
-            top: 47.5%;
+            top: 47%;
             right: 39.4%;
         }
+        @include desktop-large() {
+            top: 47%;
+            right: 40.5%;
+        }
         @include full-hd() {
-            top: 48%;
-            right: 40%;
+            top: 47%;
+            right: 41%;
         }
     }
     #number-5 {
         top: 34%;
         right: 29%;
         @include desktop-medium() {
-            top: 36.2%;
-            right: 24.6%;
+            top: 35.6%;
+            right: 27.3%;
         }
         @include desktop-large() {
-            top: 36%;
-            right: 27%;
+            top: 35.5%;
+            right: 29.4%;
         }
         @include full-hd() {
-            top: 37%;
-            right: 27.8%;
+            top: 36.5%;
+            right: 29.5%;
         }
     }
     #number-6 {
@@ -407,15 +407,15 @@ body {
         left: 24.9%;
         @include desktop-medium() {
             bottom: 0.3%;
-            left: 20%;
+            left: 23%;
         }
         @include desktop-large() {
             bottom: 0%;
-            left: 23%;
+            left: 25.6%;
         }
         @include full-hd() {
-            bottom: 1%;
-            left: 24%;
+            bottom: 0.7%;
+            left: 26.1%;
         }
     }
     #number-7 {
@@ -423,15 +423,15 @@ body {
         left: 33%;
         @include desktop-medium() {
             top: 69.7%;
-            left: 29.3%;
+            left: 31.56%;
         }
         @include desktop-large() {
-            top: 70.2%;
-            left: 31.3%;
+            top: 70%;
+            left: 33.25%;
         }
         @include full-hd() {
             top: 70.4%;
-            left: 31.7%;
+            left: 33.4%;
         }
     }
     #number-8 {
@@ -445,16 +445,16 @@ body {
         top: 10.1%;
         left: 50.4%;
         @include desktop-medium() {
-            top: 11.3%;
-            left: 50.7%;
+            top: 12%;
+            left: 50.6%;
         }
         @include desktop-large() {
-            top: 11%;
-            left: 50.9%;
+            top: 12.1%;
+            left: 50.5%;
         }
         @include full-hd() {
-            top: 12%;
-            left: 50.9%;
+            top: 12.7%;
+            left: 50.6%;
         }
     }
     #number-2 {
@@ -462,127 +462,127 @@ body {
         left: 20.5%;
         @include desktop-medium() {
             top: 10.5%;
-            left: 14%;
+            left: 17.8%;
         }
         @include desktop-large() {
-            top: 10.7%;
-            left: 17.3%;
+            top: 10.2%;
+            left: 20.8%;
         }
         @include full-hd() {
-            top: 11.2%;
-            left: 18.2%;
+            top: 11%;
+            left: 21%;
         }
     }
     #number-3 {
         top: 14%;
         right: 17.2%;
         @include desktop-medium() {
-            top: 16.9%;
-            right: 10.3%;
+            top: 16.6%;
+            right: 14.6%;
         }
         @include desktop-large() {
-            top: 16.6%;
-            right: 14%;
+            top: 16.2%;
+            right: 17.9%;
         }
         @include full-hd() {
-            top: 18%;
-            right: 15%;
+            top: 17.6%;
+            right: 18.4%;
         }
     }
     #number-4 {
         top: 48%;
         left: 39.6%;
         @include desktop-medium() {
-            top: 49.5%;
-            left: 37.6%;
-        }
-        @include desktop-large() {
-            top: 49.8%;
+            top: 49%;
             left: 38.8%;
         }
+        @include desktop-large() {
+            top: 49.4%;
+            left: 39.8%;
+        }
         @include full-hd() {
-            top: 50.8%;
-            left: 39.2%;
+            top: 50.5%;
+            left: 40%;
         }
     }
     #number-5 {
         top: 58%;
         left: 51.6%;
         @include desktop-medium() {
-            top: 58.2%;
-            left: 52.5%;
+            top: 58.1%;
+            left: 51.8%;
         }
         @include desktop-large() {
-            top: 58.6%;
-            left: 52.5%;
+            top: 58%;
+            left: 51.6%;
         }
         @include full-hd() {
-            top: 58.7%;
-            left: 52.5%;
+            top: 58.4%;
+            left: 51.6%;
         }
     }
     #number-6 {
         top: 66.5%;
         left: 22.1%;
         @include desktop-medium() {
-            top: 66.2%;
-            left: 16.3%;
+            top: 66.3%;
+            left: 20%;
         }
         @include desktop-large() {
-            top: 66%;
-            left: 19.6%;
+            top: 66.4%;
+            left: 22.7%;
         }
         @include full-hd() {
             top: 66.4%;
-            left: 20.6%;
+            left: 23.2%;
         }
     }
     #number-7 {
         top: 42.7%;
         left: 19.9%;
         @include desktop-medium() {
-            top: 44%;
-            left: 13.5%;
+            top: 44.1%;
+            left: 17.4%;
         }
         @include desktop-large() {
-            top: 44%;
-            left: 17%;
+            top: 43.8%;
+            left: 20.4%;
         }
         @include full-hd() {
-            top: 45%;
-            left: 18%;
+            top: 44.6%;
+            left: 20.8%;
         }
     }
     #number-7-1 {
         top: 26%;
         left: 40.9%;
         @include desktop-medium() {
-            top: 27.5%;
-            left: 39.2%;
+            top: 27.6%;
+            left: 40.3%;
         }
         @include desktop-large() {
-            top: 27.5%;
-            left: 40.2%;
+            top: 27.9%;
+            left: 41.2%;
         }
         @include full-hd() {
-            top: 27.9%;
-            left: 40.7%;
+            top: 29.2%;
+            left: 41.5%;
         }
     }
     #number-8 {
         top: 39%;
         right: 8.5%;
         @include desktop-medium() {
-            top: 40.5%;
-            right: 0%;
+            top: 40%;
+            right: 5.3%;
         }
         @include desktop-large() {
-            top: 40%;
-            right: 4.5%;
+            top: 39.8%;
+            right: 9.5%;
         }
         @include full-hd() {
-            top: 41%;
-            right: 5.9%;
+            top: 40.5%;
+            right: 9.9%;
         }
     }
 }
