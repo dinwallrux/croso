@@ -293,4 +293,40 @@ jQuery(document).ready(function ($) {
     //         sessionStorage.removeItem("random_url")
     //     }, 10000)
     // }();
+
+    // Display or Hide overlay screen alert
+    !function() {
+        // Appear overlay when drag the window
+        jQuery(window).resize(function(e) {
+            if( sessionStorage.getItem('is_overlay') != null ) {
+                $('.overlay').hide();
+            } else {
+                if( window.innerWidth != 1366 && window.innerWidth != 1440 && window.innerWidth != 1600 && window.innerWidth != 1920 ) {
+                    $('.overlay').css('display', 'flex');
+                }
+                setTimeout(() => {
+                    if( window.innerWidth == 1366 || window.innerWidth == 1440 || window.innerWidth == 1600 || window.innerWidth == 1920 ) {
+                        $('.overlay').hide();
+                    }
+                }, 500);
+            }
+
+        })
+    
+        // Appear overlay in first time
+        if( window.innerWidth != 1366 && window.innerWidth != 1440 && window.innerWidth != 1600 && window.innerWidth != 1920 ) {
+            $('.overlay').css('display', 'flex');
+        }
+        
+        // Check session if overlay is false
+        if( sessionStorage.getItem('is_overlay') != null ) {
+            $('.overlay').hide();
+        }
+
+        // Hide overlay and set sessionStorage
+        $('#close-overlay').on('click', function() {
+            sessionStorage.setItem("is_overlay", false); 
+            $('.overlay').hide();
+        })
+    }()
 })

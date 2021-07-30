@@ -23,6 +23,8 @@ $_SESSION['page_name'] = 'parc-publics';
 
         <?php include_once('./includes/sidebar.php') ?>
 
+        <?php include_once('./includes/overlay.php') ?>
+
         <div id="scene" class="body parc-publics">
             <div class="bg" data-depth="0.7">
                 <img src="./img/parc-green-border-min.png" alt="">

@@ -14,6 +14,77 @@ body {
     height: 100vh;
 }
 
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    img.brand {
+        margin-bottom: 50px;
+    }
+    img.pc {
+        margin-bottom: 10px;
+    }
+    h2,
+    h3 {
+        font-family: Source Sans Pro;
+        font-style: normal;
+        font-weight: bold;
+        text-align: center;
+        color: #FFFFFF;
+        margin: 0;
+    }
+    h2 {
+        font-size: 36px;
+        line-height: 45px;
+        font-weight: 700;
+    }
+    h3 {
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 400;
+        margin: 0 0 10px;
+    }
+    p {
+        font-family: Source Sans Pro;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 23px;
+        text-align: center;
+        color: #FFFFFF;
+        margin: 0 0 20px;
+    }
+    a {
+        border: 1px solid #87888A;
+        box-sizing: border-box;
+        width: 180px;
+        height: 42px;
+        padding: 9px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-family: Source Sans Pro;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        color: #87888A;
+    }
+}
+
 .header,
 .wrap-brand,
 .wrap-title{

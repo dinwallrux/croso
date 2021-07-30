@@ -23,6 +23,8 @@ $_SESSION['page_name'] = 'stades';
 
         <?php include_once('./includes/sidebar.php') ?>
 
+        <?php include_once('./includes/overlay.php') ?>
+
         <div id="scene" class="body stades">
             <div class="bg" data-depth="0.7">
                 <img src="./img/stade-green-border-min.png" alt="">
