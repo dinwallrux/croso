@@ -14,9 +14,14 @@ $mq-mobile-portrait		: 320px !default;
 $mq-mobile-landscape	: 480px !default;
 $mq-tablet-portrait		: 768px !default;
 $mq-tablet-landscape	: 1024px !default;
+$mq-1300				: 1300px !default;
 $mq-desktop				: 1382px !default;
 $mq-desktop-medium		: 1600px !default;
+$mq-desktop-large		: 1680px !default;
 $mq-full-hd				: 1900px !default;
+$mq-retina-2560			: 2560px !default;
+$mq-retina-3840			: 3840px !default;
+$mq-retina-5120			: 5120px !default;
 
 // Both portrait and landscape
 @mixin mobile-only {
@@ -97,7 +102,19 @@ $mq-full-hd				: 1900px !default;
 	}
 }
 
+@mixin tablet-landscape-height-set {
+	@media only screen and (min-width : $mq-tablet-portrait + 1) and (max-width : $mq-tablet-landscape) and (max-height: 666px) {
+		@content;
+	}
+}
+
 // Larger than portrait but less than or equal to the landscape width
+@mixin tablet-landscape-height-set-2 {
+	@media only screen and (min-width : $mq-tablet-portrait + 1) and (max-width : $mq-tablet-landscape) and (min-height: 667px) {
+		@content;
+	}
+}
+
 @mixin tablet-landscape-only {
 	@media only screen and (min-width : $mq-tablet-portrait + 1) and (max-width : $mq-tablet-landscape) {
 		@content;
@@ -127,14 +144,14 @@ $mq-full-hd				: 1900px !default;
 
 // Everything below and including the desktop 
 @mixin desktop-and-below {
-	@media only screen and (max-width : $mq-desktop) {
+	@media only screen and (max-width : $mq-1300 - 1) {
 		@content;
 	}
 }
 
 // Everything larger than a landscape tablet but less than or equal to the desktop
 @mixin desktop-only {
-	@media only screen and (min-width : $mq-tablet-landscape + 1) and (max-width : $mq-desktop) {
+	@media only screen and (min-width : $mq-1300) and (max-width : $mq-desktop) {
 		@content;
 	}
 }
@@ -151,8 +168,32 @@ $mq-full-hd				: 1900px !default;
 	}
 }
 
+@mixin desktop-extra-large {
+	@media only screen and (min-width : $mq-desktop-large) {
+		@content;
+	}
+}
+
 @mixin full-hd {
 	@media only screen and (min-width : $mq-full-hd) {
+		@content;
+	}
+}
+
+@mixin retina-2560() {
+	@media only screen and (min-width : $mq-retina-2560) {
+		@content;
+	}
+}
+
+@mixin retina-3840() {
+	@media only screen and (min-width : $mq-retina-3840) {
+		@content;
+	}
+}
+
+@mixin retina-5120() {
+	@media only screen and (min-width : $mq-retina-5120) {
 		@content;
 	}
 }

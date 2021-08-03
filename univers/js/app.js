@@ -301,11 +301,11 @@ jQuery(document).ready(function ($) {
             if( sessionStorage.getItem('is_overlay') != null ) {
                 $('.overlay').hide();
             } else {
-                if( window.innerWidth != 1366 && window.innerWidth != 1440 && window.innerWidth != 1600 && window.innerWidth != 1920 ) {
+                if( window.innerWidth != 1024 && window.innerWidth != 1280 && window.innerWidth != 1366 && window.innerWidth != 1440 && window.innerWidth != 1600 && window.innerWidth != 1680 && window.innerWidth != 1920 && window.innerWidth != 2560 && window.innerWidth != 3840 && window.innerWidth != 4096 && window.innerWidth != 5120 ) {
                     $('.overlay').css('display', 'flex');
                 }
                 setTimeout(() => {
-                    if( window.innerWidth == 1366 || window.innerWidth == 1440 || window.innerWidth == 1600 || window.innerWidth == 1920 ) {
+                    if( window.innerWidth == 1024 || window.innerWidth == 1280 || window.innerWidth == 1366 || window.innerWidth == 1440 || window.innerWidth == 1600 || window.innerWidth == 1680 || window.innerWidth == 1920 || window.innerWidth == 2560 && window.innerWidth == 3840 && window.innerWidth == 4096 && window.innerWidth == 5120 ) {
                         $('.overlay').hide();
                     }
                 }, 500);
@@ -314,7 +314,7 @@ jQuery(document).ready(function ($) {
         })
     
         // Appear overlay in first time
-        if( window.innerWidth != 1366 && window.innerWidth != 1440 && window.innerWidth != 1600 && window.innerWidth != 1920 ) {
+        if( window.innerWidth != 1024 && window.innerWidth != 1280 && window.innerWidth != 1366 && window.innerWidth != 1440 && window.innerWidth != 1600 && window.innerWidth != 1680 && window.innerWidth != 1920 && window.innerWidth != 2560 && window.innerWidth != 3840 && window.innerWidth != 4096 && window.innerWidth != 5120 ) {
             $('.overlay').css('display', 'flex');
         }
         
