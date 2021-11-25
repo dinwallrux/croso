@@ -1,11 +1,7 @@
 <?php
 session_start();
-$_SESSION['page_name'] = 'parc-publics';
-
-// if($_SESSION['current_page'] == 2) {
-//     header('Location: ./stades.php');
-//     exit;
-// }
+$_SESSION['page_name'] = 'Parcs publics';
+$_SESSION['page_slug'] = 'parc-publics';
 ?>
 
 <!DOCTYPE html>
@@ -34,7 +30,5 @@ $_SESSION['page_name'] = 'parc-publics';
 
     <?php include_once('./includes/scripts.php') ?>
 
-    <!-- Set page -->
-    <?php $_SESSION['current_page'] = 2; ?>
 </body>
 </html>

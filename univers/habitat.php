@@ -1,7 +1,8 @@
 <?php
 session_start();
-$_SESSION['page_name'] = 'Stades';
-$_SESSION['page_slug'] = 'stades';
+$_SESSION['page_name'] = 'Habitat';
+$_SESSION['page_slug'] = 'habitat';
+
 ?>
 
 <!DOCTYPE html>
@@ -21,9 +22,9 @@ $_SESSION['page_slug'] = 'stades';
 
         <?php include_once('./includes/overlay.php') ?>
 
-        <div id="scene" class="body stades">
+        <div id="scene" class="body habitat">
             <div class="bg" data-depth="0.7">
-                <img src="./img/stade-green-border-min.png" alt="">
+                <img src="./img/habitat.jpg" alt="">
             </div>
         </div>
     </div>
