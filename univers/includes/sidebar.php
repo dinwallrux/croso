@@ -1,4 +1,4 @@
-<div class="sidebar">
+<div class="sidebar collapsed">
     <div class="top">
         <h3>Bienvenue chez Croso France!</h3>
         <p>Parcourez nos univers et tous les produits Croso associés :</p>

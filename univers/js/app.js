@@ -7,17 +7,25 @@ jQuery(document).ready(function ($) {
         let trigger = $('#trigger-sidebar');
         let isCollapsed = $('.sidebar').hasClass('collapsed');
 
-        if(!isCollapsed) {
+        if(!sessionStorage.getItem('isSidebarCollapsed')) {
             setTimeout(function () {
-                $('.sidebar').addClass('collapsed')
-                trigger.removeClass('back');
-            }, 5000)
+                // open the sidebar
+                $('.sidebar').removeClass('collapsed')
+                trigger.addClass('back');
+                sessionStorage.setItem('isSidebarCollapsed', true);
+
+                // close the sidebar after opened
+                setTimeout(function () {
+                    $('.sidebar').addClass('collapsed')
+                    trigger.removeClass('back');
+                }, 5000)
+            }, 100)
         }
 
         // Remove class if burger menu is not exist for first time
-        if (isCollapsed) trigger.removeClass('back');
+        if (!isCollapsed) trigger.removeClass('back');
 
-        if (!isCollapsed) {
+        if (isCollapsed) {
             // Close header title page when click on it
             $('.header > div').not('.wrap-brand').click(function (e) {
                 $('.sidebar').addClass('collapsed')

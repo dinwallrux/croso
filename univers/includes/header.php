@@ -14,7 +14,7 @@ $urlArrorRight = $indexCurrentPage == $lastIndex ? $pages[0] . '.php' : $pages[$
 ?>
 <div class="header">
     <div class="wrap-brand">
-        <div id="trigger-sidebar" class="back">
+        <div id="trigger-sidebar">
             <i class="ion ion-md-menu"></i>
             <i class="ion ion-md-close close"></i>
         </div>
