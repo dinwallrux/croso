@@ -1435,6 +1435,1180 @@ body {
     }
 }
 
+.gares-aeroports {
+    #number-1 {
+        bottom: 0.5%;
+        @include tablet-landscape-only() {
+            bottom: 1.9%;
+        }
+        @include desktop-and-up() {
+            bottom: 38%;
+            left: -2%;
+        }
+        @include desktop-medium() {
+            bottom: 3%;
+        }
+        @include desktop-large() {
+            bottom: 2.5%;
+        }
+        @include desktop-extra-large() {
+            bottom: 3.5%
+        }
+        @include full-hd() {
+            bottom: 3.6%;
+        }
+        @include retina-2560() {
+            bottom: 3.8%;
+        }
+        @include retina-3840() {
+            bottom: 4.5%;
+        }
+        @include retina-5120() {
+            bottom: 4.5%;
+        }
+    }
+    #number-2 {
+        bottom: 5.6%;
+        left: 11.7%;
+        @include tablet-landscape-only() {
+            bottom: 6.7%;
+            left: -0.3%;
+        }
+        @include desktop-and-up() {
+            bottom: 28%;
+            left: 10.5%;
+        }
+        @include desktop-medium() {
+            bottom: 8.4%;
+            left: 8.5%;
+        }
+        @include desktop-large() {
+            bottom: 8.2%;
+            left: 12.4%;
+        }
+        @include desktop-extra-large() {
+            bottom: 9%;
+            left: 8%;
+        }
+        @include full-hd() {
+            bottom: 9.5%;
+            left: 12.9%;
+        }
+        @include retina-2560() {
+            bottom: 9.8%;
+            left: 4%;
+        }
+        @include retina-3840() {
+            bottom: 11.5%;
+            left: 4.7%;
+        }
+        @include retina-5120() {
+            bottom: 11.1%;
+            left: 4.8%;
+        }
+    }
+    #number-3 {
+        bottom: 25%;
+        left: 46.54%;
+        @include tablet-landscape-only() {
+            bottom: 25.8%;
+            left: 45.4%;
+        }
+        @include desktop-and-up() {
+            bottom: 46%;
+            left: 11%;
+        }
+        @include desktop-medium() {
+            bottom: 26.3%;
+            left: 46.2%;
+        }
+        @include desktop-large() {
+            bottom: 26%;
+            left: 46.6%;
+        }
+        @include desktop-extra-large() {
+            bottom: 26.3%;
+            left: 46.2%;
+        }
+        @include full-hd() {
+            bottom: 27%;
+            left: 46.6%;
+        }
+        @include retina-2560() {
+            bottom: 27%;
+            left: 45.8%;
+        }
+        @include retina-3840() {
+            bottom: 27.2%;
+            left: 45.9%;
+        }
+        @include retina-5120() {
+            bottom: 27.3%;
+            left: 45.9%;
+        }
+    }
+    #number-4 {
+        top: 46.7%;
+        left: 0%;
+        @include tablet-landscape-only() {
+            top: 46.8%;
+        }
+        @include desktop-and-up() {
+            top: 18%;
+            left: -0.5%;
+        }
+        @include desktop-medium() {
+            top: 47%;
+        }
+        @include desktop-large() {
+            top: 47%;
+        }
+        @include desktop-extra-large() {
+            top: 47.1%;
+        }
+        @include full-hd() {
+            top: 47%;
+        }
+        @include retina-2560() {
+            top: 47.2%;
+        }
+        @include retina-3840() {
+            top: 47.2%;
+        }
+        @include retina-5120() {
+            top: 47.2%;
+        }
+    }
+    #number-5 {
+        top: 34%;
+        left: 0%;
+        @include tablet-landscape-only() {
+            top: 34.3%;
+        }
+        @include desktop-and-up() {
+            top: 11%;
+            left: -5.4%;
+        }
+        @include desktop-medium() {
+            top: 35.6%;
+        }
+        @include desktop-large() {
+            top: 35.5%;
+        }
+        @include desktop-extra-large() {
+            top: 36.3%;
+        }
+        @include full-hd() {
+            top: 36.5%;
+        }
+        @include retina-2560() {
+            top: 36.9%;
+        }
+        @include retina-3840() {
+            top: 37.3%;
+        }
+        @include retina-5120() {
+            top: 37.7%;
+        }
+    }
+    #number-6 {
+        top: 0%;
+        left: 24.9%;
+        @include tablet-landscape-only() {
+            top: 0%;
+            left: 17%;
+        }
+        @include desktop-and-up() {
+            top: 31%;
+            left: 41%;
+        }
+        @include desktop-medium() {
+            top: 0%;
+            left: 23%;
+        }
+        @include desktop-large() {
+            top: 0%;
+            left: 25.6%;
+        }
+        @include desktop-extra-large() {
+            top: 0%;
+            left: 23%;
+        }
+        @include full-hd() {
+            top: 0%;
+            left: 26.1%;
+        }
+        @include retina-2560() {
+            top: 0%;
+            left: 20.6%;
+        }
+        @include retina-3840() {
+            top: 0%;
+            left: 21.7%;
+        }
+        @include retina-5120() {
+            top: 0%;
+            left: 21.4%;
+        }
+    }
+    #number-7 {
+        top: 69.6%;
+        left: 33%;
+        @include tablet-landscape-only() {
+            top: 68.8%;
+            left: 27.8%;
+        }
+        @include desktop-and-up() {
+            top: 25%;
+            left: 47%;
+        }
+        @include desktop-medium() {
+            top: 69.7%;
+            left: 31.56%;
+        }
+        @include desktop-large() {
+            top: 70%;
+            left: 33.25%;
+        }
+        @include desktop-extra-large() {
+            top: 70.4%;
+            left: 31.25%;
+        }
+        @include full-hd() {
+            top: 70.4%;
+            left: 33.4%;
+        }
+        @include retina-2560() {
+            top: 70.4%;
+            left: 29.5%;
+        }
+        @include retina-3840() {
+            top: 71.7%;
+            left: 29.8%;
+        }
+        @include retina-5120() {
+            top: 71.6%;
+            left: 29.8%;
+        }
+    }
+    #number-8 {
+        top: 69.6%;
+        right: 33%;
+        @include tablet-landscape-only() {
+            top: 68.8%;
+            right: 27.8%;
+        }
+        @include desktop-and-up() {
+            top: 67%;
+            right: 34.5%;
+        }
+        @include desktop-medium() {
+            top: 69.7%;
+            right: 31.56%;
+        }
+        @include desktop-large() {
+            top: 70%;
+            right: 33.25%;
+        }
+        @include desktop-extra-large() {
+            top: 70.4%;
+            right: 31.25%;
+        }
+        @include full-hd() {
+            top: 70.4%;
+            right: 33.4%;
+        }
+        @include retina-2560() {
+            top: 70.4%;
+            right: 29.5%;
+        }
+        @include retina-3840() {
+            top: 71.7%;
+            right: 29.8%;
+        }
+        @include retina-5120() {
+            top: 71.6%;
+            right: 29.8%;
+        }
+    }
+    #number-9 {
+        top: 69.6%;
+        right: 33%;
+        @include tablet-landscape-only() {
+            top: 68.8%;
+            right: 27.8%;
+        }
+        @include desktop-and-up() {
+            top: 47.3%;
+            right: 10.5%;
+        }
+        @include desktop-medium() {
+            top: 69.7%;
+            right: 31.56%;
+        }
+        @include desktop-large() {
+            top: 70%;
+            right: 33.25%;
+        }
+        @include desktop-extra-large() {
+            top: 70.4%;
+            right: 31.25%;
+        }
+        @include full-hd() {
+            top: 70.4%;
+            right: 33.4%;
+        }
+        @include retina-2560() {
+            top: 70.4%;
+            right: 29.5%;
+        }
+        @include retina-3840() {
+            top: 71.7%;
+            right: 29.8%;
+        }
+        @include retina-5120() {
+            top: 71.6%;
+            right: 29.8%;
+        }
+    }
+    #number-10 {
+        top: 69.6%;
+        right: 33%;
+        @include tablet-landscape-only() {
+            top: 68.8%;
+            right: 27.8%;
+        }
+        @include desktop-and-up() {
+            top: 18%;
+            right: 29%;
+        }
+        @include desktop-medium() {
+            top: 69.7%;
+            right: 31.56%;
+        }
+        @include desktop-large() {
+            top: 70%;
+            right: 33.25%;
+        }
+        @include desktop-extra-large() {
+            top: 70.4%;
+            right: 31.25%;
+        }
+        @include full-hd() {
+            top: 70.4%;
+            right: 33.4%;
+        }
+        @include retina-2560() {
+            top: 70.4%;
+            right: 29.5%;
+        }
+        @include retina-3840() {
+            top: 71.7%;
+            right: 29.8%;
+        }
+        @include retina-5120() {
+            top: 71.6%;
+            right: 29.8%;
+        }
+    }
+}
+
+.lieux-evenementiels {
+    #number-1 {
+        top: 0.5%;
+        @include tablet-landscape-only() {
+            top: 1.9%;
+        }
+        @include desktop-and-up() {
+            top: 13%;
+            left: 16%;
+        }
+        @include desktop-medium() {
+            top: 3%;
+        }
+        @include desktop-large() {
+            top: 2.5%;
+        }
+        @include desktop-extra-large() {
+            top: 3.5%
+        }
+        @include full-hd() {
+            top: 3.6%;
+        }
+        @include retina-2560() {
+            top: 3.8%;
+        }
+        @include retina-3840() {
+            top: 4.5%;
+        }
+        @include retina-5120() {
+            top: 4.5%;
+        }
+    }
+    #number-2 {
+        top: 5.6%;
+        left: 11.7%;
+        @include tablet-landscape-only() {
+            top: 23%;
+            left: 33%;
+        }
+        @include desktop-and-up() {
+            top: 28%;
+            left: 10.5%;
+        }
+        @include desktop-medium() {
+            top: 8.4%;
+            left: 8.5%;
+        }
+        @include desktop-large() {
+            top: 8.2%;
+            left: 12.4%;
+        }
+        @include desktop-extra-large() {
+            top: 9%;
+            left: 8%;
+        }
+        @include full-hd() {
+            top: 9.5%;
+            left: 12.9%;
+        }
+        @include retina-2560() {
+            top: 9.8%;
+            left: 4%;
+        }
+        @include retina-3840() {
+            top: 11.5%;
+            left: 4.7%;
+        }
+        @include retina-5120() {
+            top: 11.1%;
+            left: 4.8%;
+        }
+    }
+    #number-3 {
+        top: 25%;
+        left: 46.54%;
+        @include tablet-landscape-only() {
+            top: 25.8%;
+            left: 45.4%;
+        }
+        @include desktop-and-up() {
+            top: 32%;
+            left: 14.5%;
+        }
+        @include desktop-medium() {
+            top: 26.3%;
+            left: 46.2%;
+        }
+        @include desktop-large() {
+            top: 26%;
+            left: 46.6%;
+        }
+        @include desktop-extra-large() {
+            top: 26.3%;
+            left: 46.2%;
+        }
+        @include full-hd() {
+            top: 27%;
+            left: 46.6%;
+        }
+        @include retina-2560() {
+            top: 27%;
+            left: 45.8%;
+        }
+        @include retina-3840() {
+            top: 27.2%;
+            left: 45.9%;
+        }
+        @include retina-5120() {
+            top: 27.3%;
+            left: 45.9%;
+        }
+    }
+    #number-4 {
+        top: 46.7%;
+        left: 0%;
+        @include tablet-landscape-only() {
+            top: 46.8%;
+        }
+        @include desktop-and-up() {
+            top: 40%;
+            left: 24%;
+        }
+        @include desktop-medium() {
+            top: 47%;
+        }
+        @include desktop-large() {
+            top: 47%;
+        }
+        @include desktop-extra-large() {
+            top: 47.1%;
+        }
+        @include full-hd() {
+            top: 47%;
+        }
+        @include retina-2560() {
+            top: 47.2%;
+        }
+        @include retina-3840() {
+            top: 47.2%;
+        }
+        @include retina-5120() {
+            top: 47.2%;
+        }
+    }
+    #number-5 {
+        top: 34%;
+        left: 0%;
+        @include tablet-landscape-only() {
+            top: 34.3%;
+        }
+        @include desktop-and-up() {
+            top: 53.9%;
+            left: 28.6%;
+        }
+        @include desktop-medium() {
+            top: 35.6%;
+        }
+        @include desktop-large() {
+            top: 35.5%;
+        }
+        @include desktop-extra-large() {
+            top: 36.3%;
+        }
+        @include full-hd() {
+            top: 36.5%;
+        }
+        @include retina-2560() {
+            top: 36.9%;
+        }
+        @include retina-3840() {
+            top: 37.3%;
+        }
+        @include retina-5120() {
+            top: 37.7%;
+        }
+    }
+    #number-6 {
+        top: 0%;
+        left: 24.9%;
+        @include tablet-landscape-only() {
+            top: 0%;
+            left: 17%;
+        }
+        @include desktop-and-up() {
+            top: 38%;
+            left: 31.6%;
+        }
+        @include desktop-medium() {
+            top: 0%;
+            left: 23%;
+        }
+        @include desktop-large() {
+            top: 0%;
+            left: 25.6%;
+        }
+        @include desktop-extra-large() {
+            top: 0%;
+            left: 23%;
+        }
+        @include full-hd() {
+            top: 0%;
+            left: 26.1%;
+        }
+        @include retina-2560() {
+            top: 0%;
+            left: 20.6%;
+        }
+        @include retina-3840() {
+            top: 0%;
+            left: 21.7%;
+        }
+        @include retina-5120() {
+            top: 0%;
+            left: 21.4%;
+        }
+    }
+    #number-7 {
+        top: 69.6%;
+        left: 33%;
+        @include tablet-landscape-only() {
+            top: 68.8%;
+            left: 27.8%;
+        }
+        @include desktop-and-up() {
+            top: 38%;
+            left: 41%;
+        }
+        @include desktop-medium() {
+            top: 69.7%;
+            left: 31.56%;
+        }
+        @include desktop-large() {
+            top: 70%;
+            left: 33.25%;
+        }
+        @include desktop-extra-large() {
+            top: 70.4%;
+            left: 31.25%;
+        }
+        @include full-hd() {
+            top: 70.4%;
+            left: 33.4%;
+        }
+        @include retina-2560() {
+            top: 70.4%;
+            left: 29.5%;
+        }
+        @include retina-3840() {
+            top: 71.7%;
+            left: 29.8%;
+        }
+        @include retina-5120() {
+            top: 71.6%;
+            left: 29.8%;
+        }
+    }
+    #number-8 {
+        top: 69.6%;
+        right: 33%;
+        @include tablet-landscape-only() {
+            top: 68.8%;
+            right: 27.8%;
+        }
+        @include desktop-and-up() {
+            top: 42.4%;
+            right: 49.5%;
+        }
+        @include desktop-medium() {
+            top: 69.7%;
+            right: 31.56%;
+        }
+        @include desktop-large() {
+            top: 70%;
+            right: 33.25%;
+        }
+        @include desktop-extra-large() {
+            top: 70.4%;
+            right: 31.25%;
+        }
+        @include full-hd() {
+            top: 70.4%;
+            right: 33.4%;
+        }
+        @include retina-2560() {
+            top: 70.4%;
+            right: 29.5%;
+        }
+        @include retina-3840() {
+            top: 71.7%;
+            right: 29.8%;
+        }
+        @include retina-5120() {
+            top: 71.6%;
+            right: 29.8%;
+        }
+    }
+    #number-9 {
+        top: 69.6%;
+        left: 33%;
+        @include tablet-landscape-only() {
+            top: 68.8%;
+            left: 27.8%;
+        }
+        @include desktop-and-up() {
+            top: 55%;
+            left: 40%;
+        }
+        @include desktop-medium() {
+            top: 69.7%;
+            left: 31.56%;
+        }
+        @include desktop-large() {
+            top: 70%;
+            left: 33.25%;
+        }
+        @include desktop-extra-large() {
+            top: 70.4%;
+            left: 31.25%;
+        }
+        @include full-hd() {
+            top: 70.4%;
+            left: 33.4%;
+        }
+        @include retina-2560() {
+            top: 70.4%;
+            left: 29.5%;
+        }
+        @include retina-3840() {
+            top: 71.7%;
+            left: 29.8%;
+        }
+        @include retina-5120() {
+            top: 71.6%;
+            left: 29.8%;
+        }
+    }
+    #number-10 {
+        top: 69.6%;
+        right: 33%;
+        @include tablet-landscape-only() {
+            top: 68.8%;
+            right: 27.8%;
+        }
+        @include desktop-and-up() {
+            top: 50%;
+            right: 36.5%;
+        }
+        @include desktop-medium() {
+            top: 69.7%;
+            right: 31.56%;
+        }
+        @include desktop-large() {
+            top: 70%;
+            right: 33.25%;
+        }
+        @include desktop-extra-large() {
+            top: 70.4%;
+            right: 31.25%;
+        }
+        @include full-hd() {
+            top: 70.4%;
+            right: 33.4%;
+        }
+        @include retina-2560() {
+            top: 70.4%;
+            right: 29.5%;
+        }
+        @include retina-3840() {
+            top: 71.7%;
+            right: 29.8%;
+        }
+        @include retina-5120() {
+            top: 71.6%;
+            right: 29.8%;
+        }
+    }
+    #number-11 {
+        bottom: 69.6%;
+        right: 33%;
+        @include tablet-landscape-only() {
+            bottom: 68.8%;
+            right: 27.8%;
+        }
+        @include desktop-and-up() {
+            bottom: 7%;
+            left: 20.9%;
+        }
+        @include desktop-medium() {
+            bottom: 69.7%;
+            right: 31.56%;
+        }
+        @include desktop-large() {
+            bottom: 70%;
+            right: 33.25%;
+        }
+        @include desktop-extra-large() {
+            bottom: 70.4%;
+            right: 31.25%;
+        }
+        @include full-hd() {
+            bottom: 70.4%;
+            right: 33.4%;
+        }
+        @include retina-2560() {
+            bottom: 70.4%;
+            right: 29.5%;
+        }
+        @include retina-3840() {
+            bottom: 71.7%;
+            right: 29.8%;
+        }
+        @include retina-5120() {
+            bottom: 71.6%;
+            right: 29.8%;
+        }
+    }
+}
+
+.centres-commerciaux-industrie {
+    #number-1 {
+        bottom: 0.5%;
+        @include tablet-landscape-only() {
+            bottom: 1.9%;
+        }
+        @include desktop-and-up() {
+            bottom: 1%;
+            left: 20%;
+        }
+        @include desktop-medium() {
+            bottom: 3%;
+        }
+        @include desktop-large() {
+            bottom: 2.5%;
+        }
+        @include desktop-extra-large() {
+            bottom: 3.5%
+        }
+        @include full-hd() {
+            bottom: 3.6%;
+        }
+        @include retina-2560() {
+            bottom: 3.8%;
+        }
+        @include retina-3840() {
+            bottom: 4.5%;
+        }
+        @include retina-5120() {
+            bottom: 4.5%;
+        }
+    }
+    #number-2 {
+        bottom: 5.6%;
+        left: 11.7%;
+        @include tablet-landscape-only() {
+            bottom: 6.7%;
+            left: -0.3%;
+        }
+        @include desktop-and-up() {
+            bottom: 30%;
+            left: 5.7%;
+        }
+        @include desktop-medium() {
+            bottom: 8.4%;
+            left: 8.5%;
+        }
+        @include desktop-large() {
+            bottom: 8.2%;
+            left: 12.4%;
+        }
+        @include desktop-extra-large() {
+            bottom: 9%;
+            left: 8%;
+        }
+        @include full-hd() {
+            bottom: 9.5%;
+            left: 12.9%;
+        }
+        @include retina-2560() {
+            bottom: 9.8%;
+            left: 4%;
+        }
+        @include retina-3840() {
+            bottom: 11.5%;
+            left: 4.7%;
+        }
+        @include retina-5120() {
+            bottom: 11.1%;
+            left: 4.8%;
+        }
+    }
+    #number-3 {
+        bottom: 25%;
+        left: 46.54%;
+        @include tablet-landscape-only() {
+            bottom: 25.8%;
+            left: 45.4%;
+        }
+        @include desktop-and-up() {
+            bottom: 40.5%;
+            left: 7.5%;
+        }
+        @include desktop-medium() {
+            bottom: 26.3%;
+            left: 46.2%;
+        }
+        @include desktop-large() {
+            bottom: 26%;
+            left: 46.6%;
+        }
+        @include desktop-extra-large() {
+            bottom: 26.3%;
+            left: 46.2%;
+        }
+        @include full-hd() {
+            bottom: 27%;
+            left: 46.6%;
+        }
+        @include retina-2560() {
+            bottom: 27%;
+            left: 45.8%;
+        }
+        @include retina-3840() {
+            bottom: 27.2%;
+            left: 45.9%;
+        }
+        @include retina-5120() {
+            bottom: 27.3%;
+            left: 45.9%;
+        }
+    }
+    #number-4 {
+        top: 46.7%;
+        left: 0%;
+        @include tablet-landscape-only() {
+            top: 46.8%;
+        }
+        @include desktop-and-up() {
+            top: 38.5%;
+            left: 2.4%;
+        }
+        @include desktop-medium() {
+            top: 47%;
+        }
+        @include desktop-large() {
+            top: 47%;
+        }
+        @include desktop-extra-large() {
+            top: 47.1%;
+        }
+        @include full-hd() {
+            top: 47%;
+        }
+        @include retina-2560() {
+            top: 47.2%;
+        }
+        @include retina-3840() {
+            top: 47.2%;
+        }
+        @include retina-5120() {
+            top: 47.2%;
+        }
+    }
+    #number-5 {
+        top: 34%;
+        left: 0%;
+        @include tablet-landscape-only() {
+            top: 34.3%;
+        }
+        @include desktop-and-up() {
+            top: 21%;
+            left: 8.2%;
+        }
+        @include desktop-medium() {
+            top: 35.6%;
+        }
+        @include desktop-large() {
+            top: 35.5%;
+        }
+        @include desktop-extra-large() {
+            top: 36.3%;
+        }
+        @include full-hd() {
+            top: 36.5%;
+        }
+        @include retina-2560() {
+            top: 36.9%;
+        }
+        @include retina-3840() {
+            top: 37.3%;
+        }
+        @include retina-5120() {
+            top: 37.7%;
+        }
+    }
+    #number-6 {
+        bottom: 0%;
+        left: 24.9%;
+        @include tablet-landscape-only() {
+            bottom: 0%;
+            left: 17%;
+        }
+        @include desktop-and-up() {
+            bottom: 10%;
+            left: 40.9%;
+        }
+        @include desktop-medium() {
+            bottom: 0%;
+            left: 23%;
+        }
+        @include desktop-large() {
+            bottom: 0%;
+            left: 25.6%;
+        }
+        @include desktop-extra-large() {
+            bottom: 0%;
+            left: 23%;
+        }
+        @include full-hd() {
+            bottom: 0%;
+            left: 26.1%;
+        }
+        @include retina-2560() {
+            bottom: 0%;
+            left: 20.6%;
+        }
+        @include retina-3840() {
+            bottom: 0%;
+            left: 21.7%;
+        }
+        @include retina-5120() {
+            bottom: 0%;
+            left: 21.4%;
+        }
+    }
+    #number-7 {
+        bottom: 69.6%;
+        right: 33%;
+        @include tablet-landscape-only() {
+            bottom: 68.8%;
+            right: 27.8%;
+        }
+        @include desktop-and-up() {
+            bottom: -4.8%;
+            right: 21%;
+        }
+        @include desktop-medium() {
+            bottom: 69.7%;
+            right: 31.56%;
+        }
+        @include desktop-large() {
+            bottom: 70%;
+            right: 33.25%;
+        }
+        @include desktop-extra-large() {
+            bottom: 70.4%;
+            right: 31.25%;
+        }
+        @include full-hd() {
+            bottom: 70.4%;
+            right: 33.4%;
+        }
+        @include retina-2560() {
+            bottom: 70.4%;
+            right: 29.5%;
+        }
+        @include retina-3840() {
+            bottom: 71.7%;
+            right: 29.8%;
+        }
+        @include retina-5120() {
+            bottom: 71.6%;
+            right: 29.8%;
+        }
+    }
+    #number-8 {
+        bottom: 69.6%;
+        right: 33%;
+        @include tablet-landscape-only() {
+            bottom: 68.8%;
+            right: 27.8%;
+        }
+        @include desktop-and-up() {
+            bottom: 7.6%;
+            right: 2.9%;
+        }
+        @include desktop-medium() {
+            bottom: 69.7%;
+            right: 31.56%;
+        }
+        @include desktop-large() {
+            bottom: 70%;
+            right: 33.25%;
+        }
+        @include desktop-extra-large() {
+            bottom: 70.4%;
+            right: 31.25%;
+        }
+        @include full-hd() {
+            bottom: 70.4%;
+            right: 33.4%;
+        }
+        @include retina-2560() {
+            bottom: 70.4%;
+            right: 29.5%;
+        }
+        @include retina-3840() {
+            bottom: 71.7%;
+            right: 29.8%;
+        }
+        @include retina-5120() {
+            bottom: 71.6%;
+            right: 29.8%;
+        }
+    }
+    #number-9 {
+        bottom: 69.6%;
+        right: 33%;
+        @include tablet-landscape-only() {
+            bottom: 68.8%;
+            right: 27.8%;
+        }
+        @include desktop-and-up() {
+            bottom: 21%;
+            right: 11%;
+        }
+        @include desktop-medium() {
+            bottom: 69.7%;
+            right: 31.56%;
+        }
+        @include desktop-large() {
+            bottom: 70%;
+            right: 33.25%;
+        }
+        @include desktop-extra-large() {
+            bottom: 70.4%;
+            right: 31.25%;
+        }
+        @include full-hd() {
+            bottom: 70.4%;
+            right: 33.4%;
+        }
+        @include retina-2560() {
+            bottom: 70.4%;
+            right: 29.5%;
+        }
+        @include retina-3840() {
+            bottom: 71.7%;
+            right: 29.8%;
+        }
+        @include retina-5120() {
+            bottom: 71.6%;
+            right: 29.8%;
+        }
+    }
+    #number-10 {
+        top: 69.6%;
+        right: 33%;
+        @include tablet-landscape-only() {
+            top: 68.8%;
+            right: 27.8%;
+        }
+        @include desktop-and-up() {
+            top: 30%;
+            right: 44%;
+        }
+        @include desktop-medium() {
+            top: 69.7%;
+            right: 31.56%;
+        }
+        @include desktop-large() {
+            top: 70%;
+            right: 33.25%;
+        }
+        @include desktop-extra-large() {
+            top: 70.4%;
+            right: 31.25%;
+        }
+        @include full-hd() {
+            top: 70.4%;
+            right: 33.4%;
+        }
+        @include retina-2560() {
+            top: 70.4%;
+            right: 29.5%;
+        }
+        @include retina-3840() {
+            top: 71.7%;
+            right: 29.8%;
+        }
+        @include retina-5120() {
+            top: 71.6%;
+            right: 29.8%;
+        }
+    }
+}
+
 .tooltip {
     width: 240px;
     position: relative;

@@ -355,6 +355,366 @@ jQuery(document).ready(function ($) {
                 `);
             })
         }
+
+        // gares-aeroports
+        let garesAeroports = [
+            {
+                idButton: 'number-1',
+                idTooltip: 'tooltip-1',
+                value: '1',
+                tooltipTitle: 'Garde-corps en verre',
+                tooltipText: 'Les garde-corps tout en verre Crosilux avec main courante à LED associent design et fonctionnalité pour des installations aussi esthétiques que faciles à poser.',
+                link: 'https://croso-france.com/23-main-courantes-sur-verre',
+                tooltipButton: 'détails du produit'
+            },
+            {
+                idButton: 'number-2',
+                idTooltip: 'tooltip-2',
+                value: '2',
+                tooltipTitle: 'Appui-vélos',
+                tooltipText: 'Nos appuis-vélos en acier galvanisé à chaud et inox prennent une place de plus en plus importante dans l’aménagement des espaces publics.',
+                link: '#',
+                tooltipButton: 'détails du produit'
+            },
+            {
+                idButton: 'number-3',
+                idTooltip: 'tooltip-3',
+                value: '3',
+                tooltipTitle: 'Barrière d’accès',
+                tooltipText: 'Nos barrières d’accès permettent de gérer les accès aux allées, routes, chemins, aux parkings, … Cette gamme complète permet de fournir un produit adapté à chaque besoin.',
+                link: 'https://croso-france.com/223-barrieres-et-portiques-dacces-tourniquets',
+                tooltipButton: 'détails du produit'
+            },
+            {
+                idButton: 'number-4',
+                idTooltip: 'tooltip-4',
+                value: '4',
+                tooltipTitle: 'Borne de voirie',
+                tooltipText: 'Avec leur design élégant et harmonieux nos bornes se fondent à merveille dans le paysage urbain.',
+                link: 'https://croso-france.com/226-bornes-decoratives-et-protections-darbres-mars',
+                tooltipButton: 'détails du produit'
+            },
+            {
+                idButton: 'number-5',
+                idTooltip: 'tooltip-5',
+                value: '5',
+                tooltipTitle: 'Borne lumineuse Solarpost ',
+                tooltipText: 'Alimentée à 100% par l’énergie solaire grâce à ses panneaux solaires situés sur les 4 côtés de la borne, elle fournit un éclairage continu et intelligent.',
+                link: 'https://croso-france.com/crososolar/7244-solarpost.html',
+                tooltipButton: 'détails du produit'
+            },
+            {
+                idButton: 'number-6',
+                idTooltip: 'tooltip-6',
+                value: '6',
+                tooltipTitle: 'Poteaux à sangle',
+                tooltipText: "La gamme de poteaux gère file Beltrac a été conçue pour allier design, solidité et facilité d'utilisation. Ils permettent d’améliorer les conditions de circulation d’orientation et de réception des visiteurs.",
+                link: 'https://croso-france.com/79-lieux-culturels-et-publics',
+                tooltipButton: 'détails du produit'
+            },
+            {
+                idButton: 'number-7',
+                idTooltip: 'tooltip-7',
+                value: '7',
+                tooltipTitle: 'Garde-corps inox',
+                tooltipText: 'Les poteaux en inox ou thermolaqués de la gamme CROSINOX® sont fabriqués à la demande et sur-mesure pour escaliers, balcons, terrasses ou mezzanines.',
+                link: 'https://croso-france.com/22-gardes-corps-inox-en-kits',
+                tooltipButton: 'détails du produit'
+            },
+            {
+                idButton: 'number-8',
+                idTooltip: 'tooltip-8',
+                value: '8',
+                tooltipTitle: 'Barrière extensible de sécurité',
+                tooltipText: 'Cette barrière extensible de sécurité est autoportante, robuste et supporte de fortes pressions. Facile et rapide à mettre en œuvre et à transporter, elle se plie et se déplie en seulement 5 sec. par une seule personne.',
+                link: 'https://croso-france.com/316-barriere-extensible-de-securite',
+                tooltipButton: 'détails du produit'
+            },
+            {
+                idButton: 'number-9',
+                idTooltip: 'tooltip-9',
+                value: '9',
+                tooltipTitle: 'Barrière extensible de sécurité',
+                tooltipText: 'Cette barrière extensible de sécurité est autoportante, robuste et supporte de fortes pressions. Facile et rapide à mettre en œuvre et à transporter, elle se plie et se déplie en seulement 5 sec. par une seule personne.',
+                link: 'https://croso-france.com/316-barriere-extensible-de-securite',
+                tooltipButton: 'détails du produit'
+            },
+            {
+                idButton: 'number-10',
+                idTooltip: 'tooltip-10',
+                value: '10',
+                tooltipTitle: 'Barrière extensible de sécurité',
+                tooltipText: 'Cette barrière extensible de sécurité est autoportante, robuste et supporte de fortes pressions. Facile et rapide à mettre en œuvre et à transporter, elle se plie et se déplie en seulement 5 sec. par une seule personne.',
+                link: 'https://croso-france.com/316-barriere-extensible-de-securite',
+                tooltipButton: 'détails du produit'
+            },
+        ]
+
+        if($('.gares-aeroports').length > 0) {
+            garesAeroports.forEach(function (data) {
+                $('.gares-aeroports .bg').append(`
+                    <div class="numbers" data-depth="0.7">
+                        <div id="${data.idButton}" class="number">
+                            <span>${data.value}</span>
+                        </div>
+                        <div id="${data.idTooltip}" class="tooltip">
+                            <div class="tooltip-body">
+                                <h4>${data.tooltipTitle}</h4>
+                                <p>${data.tooltipText}</p>
+                            </div>
+                            <div class="tooltip-footer">
+                                <a href="${data.link}" class="btn btn-success">
+                                    <span>${data.tooltipButton}</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                `);
+            })
+        }
+
+        // lieux-evenementiels
+        let lieuxEvenementiels = [
+            {
+                idButton: 'number-1',
+                idTooltip: 'tooltip-1',
+                value: '1',
+                tooltipTitle: 'Garde-corps en verre',
+                tooltipText: 'Les garde-corps tout en verre Crosilux avec main courante à LED associent design et fonctionnalité pour des installations aussi esthétiques que faciles à poser.',
+                link: 'https://croso-france.com/23-main-courantes-sur-verre',
+                tooltipButton: 'détails du produit'
+            },
+            {
+                idButton: 'number-2',
+                idTooltip: 'tooltip-2',
+                value: '2',
+                tooltipTitle: 'Appui-vélos',
+                tooltipText: 'Nos appuis-vélos en acier galvanisé à chaud et inox prennent une place de plus en plus importante dans l’aménagement des espaces publics.',
+                link: '#',
+                tooltipButton: 'détails du produit'
+            },
+            {
+                idButton: 'number-3',
+                idTooltip: 'tooltip-3',
+                value: '3',
+                tooltipTitle: 'Barrière d’accès',
+                tooltipText: 'Nos barrières d’accès permettent de gérer les accès aux allées, routes, chemins, aux parkings, … Cette gamme complète permet de fournir un produit adapté à chaque besoin.',
+                link: 'https://croso-france.com/223-barrieres-et-portiques-dacces-tourniquets',
+                tooltipButton: 'détails du produit'
+            },
+            {
+                idButton: 'number-4',
+                idTooltip: 'tooltip-4',
+                value: '4',
+                tooltipTitle: 'Borne de voirie',
+                tooltipText: 'Avec leur design élégant et harmonieux nos bornes se fondent à merveille dans le paysage urbain.',
+                link: 'https://croso-france.com/226-bornes-decoratives-et-protections-darbres-mars',
+                tooltipButton: 'détails du produit'
+            },
+            {
+                idButton: 'number-5',
+                idTooltip: 'tooltip-5',
+                value: '5',
+                tooltipTitle: 'Borne lumineuse Solarpost ',
+                tooltipText: 'Alimentée à 100% par l’énergie solaire grâce à ses panneaux solaires situés sur les 4 côtés de la borne, elle fournit un éclairage continu et intelligent.',
+                link: 'https://croso-france.com/crososolar/7244-solarpost.html',
+                tooltipButton: 'détails du produit'
+            },
+            {
+                idButton: 'number-6',
+                idTooltip: 'tooltip-6',
+                value: '6',
+                tooltipTitle: 'Poteaux à sangle',
+                tooltipText: "La gamme de poteaux gère file Beltrac a été conçue pour allier design, solidité et facilité d'utilisation. Ils permettent d’améliorer les conditions de circulation d’orientation et de réception des visiteurs.",
+                link: 'https://croso-france.com/79-lieux-culturels-et-publics',
+                tooltipButton: 'détails du produit'
+            },
+            {
+                idButton: 'number-7',
+                idTooltip: 'tooltip-7',
+                value: '7',
+                tooltipTitle: 'Garde-corps inox',
+                tooltipText: 'Les poteaux en inox ou thermolaqués de la gamme CROSINOX® sont fabriqués à la demande et sur-mesure pour escaliers, balcons, terrasses ou mezzanines.',
+                link: 'https://croso-france.com/22-gardes-corps-inox-en-kits',
+                tooltipButton: 'détails du produit'
+            },
+            {
+                idButton: 'number-8',
+                idTooltip: 'tooltip-8',
+                value: '8',
+                tooltipTitle: 'Barrière extensible de sécurité',
+                tooltipText: 'Cette barrière extensible de sécurité est autoportante, robuste et supporte de fortes pressions. Facile et rapide à mettre en œuvre et à transporter, elle se plie et se déplie en seulement 5 sec. par une seule personne.',
+                link: 'https://croso-france.com/316-barriere-extensible-de-securite',
+                tooltipButton: 'détails du produit'
+            },
+            {
+                idButton: 'number-9',
+                idTooltip: 'tooltip-9',
+                value: '9',
+                tooltipTitle: 'Barrière extensible de sécurité',
+                tooltipText: 'Cette barrière extensible de sécurité est autoportante, robuste et supporte de fortes pressions. Facile et rapide à mettre en œuvre et à transporter, elle se plie et se déplie en seulement 5 sec. par une seule personne.',
+                link: 'https://croso-france.com/316-barriere-extensible-de-securite',
+                tooltipButton: 'détails du produit'
+            },
+            {
+                idButton: 'number-10',
+                idTooltip: 'tooltip-10',
+                value: '10',
+                tooltipTitle: 'Barrière extensible de sécurité',
+                tooltipText: 'Cette barrière extensible de sécurité est autoportante, robuste et supporte de fortes pressions. Facile et rapide à mettre en œuvre et à transporter, elle se plie et se déplie en seulement 5 sec. par une seule personne.',
+                link: 'https://croso-france.com/316-barriere-extensible-de-securite',
+                tooltipButton: 'détails du produit'
+            },
+            {
+                idButton: 'number-11',
+                idTooltip: 'tooltip-11',
+                value: '11',
+                tooltipTitle: 'Barrière extensible de sécurité',
+                tooltipText: 'Cette barrière extensible de sécurité est autoportante, robuste et supporte de fortes pressions. Facile et rapide à mettre en œuvre et à transporter, elle se plie et se déplie en seulement 5 sec. par une seule personne.',
+                link: 'https://croso-france.com/316-barriere-extensible-de-securite',
+                tooltipButton: 'détails du produit'
+            },
+        ]
+
+        if($('.lieux-evenementiels').length > 0) {
+            lieuxEvenementiels.forEach(function (data) {
+                $('.lieux-evenementiels .bg').append(`
+                    <div class="numbers" data-depth="0.7">
+                        <div id="${data.idButton}" class="number">
+                            <span>${data.value}</span>
+                        </div>
+                        <div id="${data.idTooltip}" class="tooltip">
+                            <div class="tooltip-body">
+                                <h4>${data.tooltipTitle}</h4>
+                                <p>${data.tooltipText}</p>
+                            </div>
+                            <div class="tooltip-footer">
+                                <a href="${data.link}" class="btn btn-success">
+                                    <span>${data.tooltipButton}</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                `);
+            })
+        }
+
+        // centres-commerciaux-industrie
+        let centresCommerciauxIndustrie = [
+            {
+                idButton: 'number-1',
+                idTooltip: 'tooltip-1',
+                value: '1',
+                tooltipTitle: 'Garde-corps en verre',
+                tooltipText: 'Les garde-corps tout en verre Crosilux avec main courante à LED associent design et fonctionnalité pour des installations aussi esthétiques que faciles à poser.',
+                link: 'https://croso-france.com/23-main-courantes-sur-verre',
+                tooltipButton: 'détails du produit'
+            },
+            {
+                idButton: 'number-2',
+                idTooltip: 'tooltip-2',
+                value: '2',
+                tooltipTitle: 'Appui-vélos',
+                tooltipText: 'Nos appuis-vélos en acier galvanisé à chaud et inox prennent une place de plus en plus importante dans l’aménagement des espaces publics.',
+                link: '#',
+                tooltipButton: 'détails du produit'
+            },
+            {
+                idButton: 'number-3',
+                idTooltip: 'tooltip-3',
+                value: '3',
+                tooltipTitle: 'Barrière d’accès',
+                tooltipText: 'Nos barrières d’accès permettent de gérer les accès aux allées, routes, chemins, aux parkings, … Cette gamme complète permet de fournir un produit adapté à chaque besoin.',
+                link: 'https://croso-france.com/223-barrieres-et-portiques-dacces-tourniquets',
+                tooltipButton: 'détails du produit'
+            },
+            {
+                idButton: 'number-4',
+                idTooltip: 'tooltip-4',
+                value: '4',
+                tooltipTitle: 'Borne de voirie',
+                tooltipText: 'Avec leur design élégant et harmonieux nos bornes se fondent à merveille dans le paysage urbain.',
+                link: 'https://croso-france.com/226-bornes-decoratives-et-protections-darbres-mars',
+                tooltipButton: 'détails du produit'
+            },
+            {
+                idButton: 'number-5',
+                idTooltip: 'tooltip-5',
+                value: '5',
+                tooltipTitle: 'Borne lumineuse Solarpost ',
+                tooltipText: 'Alimentée à 100% par l’énergie solaire grâce à ses panneaux solaires situés sur les 4 côtés de la borne, elle fournit un éclairage continu et intelligent.',
+                link: 'https://croso-france.com/crososolar/7244-solarpost.html',
+                tooltipButton: 'détails du produit'
+            },
+            {
+                idButton: 'number-6',
+                idTooltip: 'tooltip-6',
+                value: '6',
+                tooltipTitle: 'Poteaux à sangle',
+                tooltipText: "La gamme de poteaux gère file Beltrac a été conçue pour allier design, solidité et facilité d'utilisation. Ils permettent d’améliorer les conditions de circulation d’orientation et de réception des visiteurs.",
+                link: 'https://croso-france.com/79-lieux-culturels-et-publics',
+                tooltipButton: 'détails du produit'
+            },
+            {
+                idButton: 'number-7',
+                idTooltip: 'tooltip-7',
+                value: '7',
+                tooltipTitle: 'Garde-corps inox',
+                tooltipText: 'Les poteaux en inox ou thermolaqués de la gamme CROSINOX® sont fabriqués à la demande et sur-mesure pour escaliers, balcons, terrasses ou mezzanines.',
+                link: 'https://croso-france.com/22-gardes-corps-inox-en-kits',
+                tooltipButton: 'détails du produit'
+            },
+            {
+                idButton: 'number-8',
+                idTooltip: 'tooltip-8',
+                value: '8',
+                tooltipTitle: 'Barrière extensible de sécurité',
+                tooltipText: 'Cette barrière extensible de sécurité est autoportante, robuste et supporte de fortes pressions. Facile et rapide à mettre en œuvre et à transporter, elle se plie et se déplie en seulement 5 sec. par une seule personne.',
+                link: 'https://croso-france.com/316-barriere-extensible-de-securite',
+                tooltipButton: 'détails du produit'
+            },
+            {
+                idButton: 'number-9',
+                idTooltip: 'tooltip-9',
+                value: '9',
+                tooltipTitle: 'Barrière extensible de sécurité',
+                tooltipText: 'Cette barrière extensible de sécurité est autoportante, robuste et supporte de fortes pressions. Facile et rapide à mettre en œuvre et à transporter, elle se plie et se déplie en seulement 5 sec. par une seule personne.',
+                link: 'https://croso-france.com/316-barriere-extensible-de-securite',
+                tooltipButton: 'détails du produit'
+            },
+            {
+                idButton: 'number-10',
+                idTooltip: 'tooltip-10',
+                value: '10',
+                tooltipTitle: 'Barrière extensible de sécurité',
+                tooltipText: 'Cette barrière extensible de sécurité est autoportante, robuste et supporte de fortes pressions. Facile et rapide à mettre en œuvre et à transporter, elle se plie et se déplie en seulement 5 sec. par une seule personne.',
+                link: 'https://croso-france.com/316-barriere-extensible-de-securite',
+                tooltipButton: 'détails du produit'
+            },
+        ]
+
+        if($('.centres-commerciaux-industrie').length > 0) {
+            centresCommerciauxIndustrie.forEach(function (data) {
+                $('.centres-commerciaux-industrie .bg').append(`
+                    <div class="numbers" data-depth="0.7">
+                        <div id="${data.idButton}" class="number">
+                            <span>${data.value}</span>
+                        </div>
+                        <div id="${data.idTooltip}" class="tooltip">
+                            <div class="tooltip-body">
+                                <h4>${data.tooltipTitle}</h4>
+                                <p>${data.tooltipText}</p>
+                            </div>
+                            <div class="tooltip-footer">
+                                <a href="${data.link}" class="btn btn-success">
+                                    <span>${data.tooltipButton}</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                `);
+            })
+        }
     }();
 
     // Add tooltip

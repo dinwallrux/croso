@@ -23,7 +23,7 @@ $_SESSION['page_slug'] = 'centres-commerciaux-industrie';
 
         <div id="scene" class="body centres-commerciaux-industrie">
             <div class="bg" data-depth="0.7">
-                <img src="./img/centres-commerciaux-industrie-green-border.png" alt="">
+                <img src="./img/centres-commerciaux-industrie-min.jpg" alt="">
             </div>
         </div>
     </div>
