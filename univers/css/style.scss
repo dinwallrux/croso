@@ -2182,14 +2182,54 @@ body {
     }
     #number-11 {
         bottom: 69.6%;
+        left: 33%;
+        @include tablet-landscape-only() {
+            bottom: 68.8%;
+            left: 27.8%;
+        }
+        @include desktop-and-up() {
+            bottom: 7%;
+            left: 20.9%;
+        }
+        @include desktop-medium() {
+            bottom: 69.7%;
+            left: 31.56%;
+        }
+        @include desktop-large() {
+            bottom: 70%;
+            left: 33.25%;
+        }
+        @include desktop-extra-large() {
+            bottom: 70.4%;
+            left: 31.25%;
+        }
+        @include full-hd() {
+            bottom: 70.4%;
+            left: 33.4%;
+        }
+        @include retina-2560() {
+            bottom: 70.4%;
+            left: 29.5%;
+        }
+        @include retina-3840() {
+            bottom: 71.7%;
+            left: 29.8%;
+        }
+        @include retina-5120() {
+            bottom: 71.6%;
+            left: 29.8%;
+        }
+    }
+    #number-12 {
+        bottom: 69.6%;
         right: 33%;
         @include tablet-landscape-only() {
             bottom: 68.8%;
             right: 27.8%;
         }
         @include desktop-and-up() {
-            bottom: 7%;
-            left: 20.9%;
+            bottom: 12%;
+            right: -2%;
         }
         @include desktop-medium() {
             bottom: 69.7%;
