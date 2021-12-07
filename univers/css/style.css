@@ -293,17 +293,14 @@ body {
   @media only screen and (min-width: 2560px) {
     .body {
       height: 100vh; } }
-  .body.parc-publics img {
-    object-fit: cover; }
-  .body.stades img {
-    object-fit: cover; }
   .body .bg {
     width: 100%;
     height: 100%; }
     .body .bg img {
       width: 100%;
       height: 100%;
-      transform: scale(1.187); }
+      transform: scale(1.187);
+      object-fit: cover; }
       @media only screen and (min-width: 1383px) and (max-width: 1599px) {
         .body .bg img {
           transform: scale(1.17); } }
