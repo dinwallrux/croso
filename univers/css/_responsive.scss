@@ -19,9 +19,9 @@ $mq-desktop				: 1382px !default;
 $mq-desktop-medium		: 1600px !default;
 $mq-desktop-large		: 1680px !default;
 $mq-full-hd				: 1900px !default;
-$mq-retina-2560			: 2560px !default;
-$mq-retina-3840			: 3840px !default;
-$mq-retina-5120			: 5120px !default;
+$mq-retina-2560			: 2560px !default; // 2560 x 1440
+$mq-retina-3840			: 3840px !default; // 3840 x 2160
+$mq-retina-5120			: 5120px !default; // 5120 x 2880
 
 // Both portrait and landscape
 @mixin mobile-only {

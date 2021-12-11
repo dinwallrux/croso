@@ -23,7 +23,7 @@ $_SESSION['page_slug'] = 'stades';
 
         <div id="scene" class="body stades">
             <div class="bg" data-depth="0.7">
-                <img src="./img/stade-green-border-min.png" alt="">
+                <img src="./img/stades.jpg" alt="">
             </div>
         </div>
     </div>

@@ -23,7 +23,7 @@ $_SESSION['page_slug'] = 'lieux-evenementiels';
 
         <div id="scene" class="body lieux-evenementiels">
             <div class="bg" data-depth="0.7">
-                <img src="./img/lieux-evenementiels-min.jpg" alt="">
+                <img src="./img/lieux-evenementiels.jpg" alt="">
             </div>
         </div>
     </div>

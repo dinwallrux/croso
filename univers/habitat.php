@@ -24,7 +24,7 @@ $_SESSION['page_slug'] = 'habitat';
 
         <div id="scene" class="body habitat">
             <div class="bg" data-depth="0.7">
-                <img src="./img/habitat-green-border-min.jpg" alt="">
+                <img src="./img/habitat.jpg" alt="">
             </div>
         </div>
     </div>

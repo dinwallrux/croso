@@ -23,7 +23,7 @@ $_SESSION['page_slug'] = 'parc-publics';
 
         <div id="scene" class="body parc-publics">
             <div class="bg" data-depth="0.7">
-                <img src="./img/parc-green-border-min.png" alt="">
+                <img src="./img/parcs-publics.jpg" alt="">
             </div>
         </div>
     </div>
