@@ -118,7 +118,7 @@ jQuery(document).ready(function ($) {
         if($('.parc-publics').length > 0) {
             par_publics.forEach(function (data) {
                 let isDisabledButton = data.link == '#' ? 'btn-disabled' : 'btn-success';
-                $('.parc-publics .bg').append(`
+                $('.parc-publics .bg .mirror-width-image').append(`
                     <div class="numbers" >
                         <div id="${data.idButton}" class="number">
                             <span>${data.value}</span>
@@ -227,7 +227,7 @@ jQuery(document).ready(function ($) {
 
         if($('.stades').length > 0) {
             stades.forEach(function (data) {
-                $('.stades .bg').append(`
+                $('.stades .bg .mirror-width-image').append(`
                     <div class="numbers" data-depth="0.7">
                         <div id="${data.idButton}" class="number">
                             <span>${data.value}</span>
@@ -335,7 +335,7 @@ jQuery(document).ready(function ($) {
 
         if($('.habitat').length > 0) {
             habitat.forEach(function (data) {
-                $('.habitat .bg').append(`
+                $('.habitat .bg .mirror-width-image').append(`
                     <div class="numbers" data-depth="0.7">
                         <div id="${data.idButton}" class="number">
                             <span>${data.value}</span>
@@ -452,7 +452,7 @@ jQuery(document).ready(function ($) {
 
         if($('.gares-aeroports').length > 0) {
             garesAeroports.forEach(function (data) {
-                $('.gares-aeroports .bg').append(`
+                $('.gares-aeroports .bg .mirror-width-image').append(`
                     <div class="numbers" data-depth="0.7">
                         <div id="${data.idButton}" class="number">
                             <span>${data.value}</span>
@@ -587,7 +587,7 @@ jQuery(document).ready(function ($) {
 
         if($('.lieux-evenementiels').length > 0) {
             lieuxEvenementiels.forEach(function (data) {
-                $('.lieux-evenementiels .bg').append(`
+                $('.lieux-evenementiels .bg .mirror-width-image').append(`
                     <div class="numbers" data-depth="0.7">
                         <div id="${data.idButton}" class="number">
                             <span>${data.value}</span>
@@ -704,7 +704,7 @@ jQuery(document).ready(function ($) {
 
         if($('.centres-commerciaux-industrie').length > 0) {
             centresCommerciauxIndustrie.forEach(function (data) {
-                $('.centres-commerciaux-industrie .bg').append(`
+                $('.centres-commerciaux-industrie .bg .mirror-width-image').append(`
                     <div class="numbers" data-depth="0.7">
                         <div id="${data.idButton}" class="number">
                             <span>${data.value}</span>
@@ -754,13 +754,13 @@ jQuery(document).ready(function ($) {
     }();
 
     // Parallax
-    !function () {
-        let scene = document.getElementById('scene');
-        let parallaxInstance = new Parallax(scene, {
-            relativeInput: true,
-            pointerEvents: true,
-        });
-    }();
+    // !function () {
+    //     let scene = document.getElementById('scene');
+    //     let parallaxInstance = new Parallax(scene, {
+    //         relativeInput: true,
+    //         pointerEvents: true,
+    //     });
+    // }();
 
     // Random page
     // !function () {
@@ -816,4 +816,95 @@ jQuery(document).ready(function ($) {
             $('.overlay').hide();
         })
     }()
+})
+
+// drag horizontal
+const slider = document.querySelector('.scrolling-wrapper');
+let isDown = false;
+let startX;
+let scrollLeft;
+
+slider.addEventListener('mousedown', function(e) {
+    let rect = slider.getBoundingClientRect();
+    isDown = true;
+    slider.classList.add('active');
+    // Get initial mouse position
+    startX = e.pageX - rect.left;
+    // Get initial scroll position in pixels from left
+    scrollLeft = slider.scrollLeft;
+    // change cursor
+    slider.style.cursor = 'grabbing';
+});
+
+slider.addEventListener('mouseleave', function() {
+    isDown = false;
+    slider.dataset.dragging = false;
+    slider.classList.remove('active');
+    
+    // hide arrow when arrow leave
+    $('.drag').removeClass('show');
+});
+
+slider.addEventListener('mouseup', function() {
+    isDown = false;
+    slider.dataset.dragging = false;
+    slider.classList.remove('active');
+    // change cursor
+    slider.style.cursor = 'grab';
+});
+
+slider.addEventListener('mousemove', function(e) {
+    if (!isDown) return;
+    let rect = slider.getBoundingClientRect();
+    e.preventDefault();
+    slider.dataset.dragging = true;
+    // Get new mouse position
+    const x = e.pageX - rect.left;
+    // Get distance mouse has moved (new mouse position minus initial mouse position)
+    const walk = (x - startX);
+    // Update scroll position of slider from left (amount mouse has moved minus initial scroll position)
+    slider.scrollLeft = scrollLeft - walk;
+});
+
+// add hover to show arrow
+$('.body').mousemove(function(e) {
+    if ( e.pageX <= (window.innerWidth / 2) ) {
+        $('.drag--left').addClass('show');
+        $('.drag--right').removeClass('show');
+    } else if ( e.pageX >= (window.innerWidth / 2) ) {
+        $('.drag--left').removeClass('show');
+        $('.drag--right').addClass('show');
+    }
+})
+
+// trigger drag horizontal by arrow
+$('.drag--left').on('click', function() {
+    $('.scrolling-wrapper').stop().animate({
+        scrollLeft: -2000
+    }, 900);
+    // slider.scrollLeft -= 2000;
+})
+$('.drag--right').on('click', function() {
+    $('.scrolling-wrapper').stop().animate({
+        scrollLeft: +2000
+    }, 900);
+    // slider.scrollLeft += 2000;
+})
+
+// check img attribute loaded 
+let loadImage = function() {
+    var image = document.querySelector('.bg img');
+    var isLoaded = image.complete && image.naturalHeight !== 0;
+    if (isLoaded) {
+        setTimeout(() => {
+            $('.bg .mirror-width-image').css('width', image.width)
+        }, 100);
+    }
+};
+window.addEventListener('load', function(e){
+    loadImage()
+})
+
+window.addEventListener('resize', function(e) {
+    loadImage()
 })

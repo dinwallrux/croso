@@ -21,9 +21,16 @@ $_SESSION['page_slug'] = 'parc-publics';
 
         <?php include_once('./includes/overlay.php') ?>
 
-        <div id="scene" class="body parc-publics">
-            <div class="bg" data-depth="0.7">
+        <div class="body parc-publics">
+            <div class="drag drag--left">
+                <i class="ion ion-ios-arrow-round-back"></i>
+            </div>
+            <div class="drag drag--right">
+                <i class="ion ion-ios-arrow-round-forward"></i>
+            </div>
+            <div class="bg scrolling-wrapper">
                 <img src="./img/parcs-publics.jpg" alt="">
+                <div class="mirror-width-image"></div>
             </div>
         </div>
     </div>
