@@ -898,6 +898,10 @@ let loadImage = function() {
     if (isLoaded) {
         setTimeout(() => {
             $('.bg .mirror-width-image').css('width', image.width)
+            
+            // make center of horizontal scroll
+            let innerWidth = document.querySelector('.scrolling-wrapper > div')
+            slider.scrollLeft = (innerWidth.offsetWidth - slider.offsetWidth) / 2
         }, 100);
     }
 };
