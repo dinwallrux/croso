@@ -3,7 +3,6 @@ session_start();
 $_SESSION['page_name'] = 'Parcs publics';
 $_SESSION['page_slug'] = 'parc-publics';
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,8 +12,8 @@ $_SESSION['page_slug'] = 'parc-publics';
     
     <?php include_once('./includes/head_scripts.php') ?>
 </head>
-<body>
-    <div class="container">
+<body data-barba="wrapper">
+    <div class="container" data-barba="container">
         <?php include_once('./includes/header.php') ?>
 
         <?php include_once('./includes/sidebar.php') ?>

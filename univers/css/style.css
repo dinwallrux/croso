@@ -162,6 +162,7 @@ body {
     justify-content: center; }
 
 .sidebar {
+  opacity: 1;
   position: absolute;
   top: 100px;
   left: 0;
@@ -200,7 +201,8 @@ body {
     .sidebar {
       height: 100vh; } }
   .sidebar.collapsed {
-    left: -410px; }
+    left: -410px;
+    opacity: 0; }
   .sidebar h3 {
     font-family: Palanquin;
     font-style: normal;
@@ -1472,6 +1474,216 @@ body {
       top: 33.7%;
       right: 45%; } }
 
+.retail-commerce #number-1 {
+  bottom: 6.2%;
+  left: 27.6%; }
+  @media only screen and (min-width: 1383px) and (max-width: 1599px) {
+    .retail-commerce #number-1 {
+      bottom: 6.2%;
+      left: 27.9%; } }
+  @media only screen and (min-width: 1600px) {
+    .retail-commerce #number-1 {
+      bottom: 6.3%;
+      left: 28%; } }
+  @media only screen and (min-width: 1680px) {
+    .retail-commerce #number-1 {
+      bottom: 6.9%;
+      left: 28.4%; } }
+  @media only screen and (min-width: 3840px) {
+    .retail-commerce #number-1 {
+      bottom: 7.5%;
+      left: 29.1%; } }
+.retail-commerce #number-2 {
+  bottom: 4.3%;
+  left: 3%; }
+  @media only screen and (min-width: 1383px) and (max-width: 1599px) {
+    .retail-commerce #number-2 {
+      bottom: 5.2%;
+      left: 3%; } }
+  @media only screen and (min-width: 1600px) {
+    .retail-commerce #number-2 {
+      bottom: 5.6%;
+      left: 3.2%; } }
+  @media only screen and (min-width: 1680px) {
+    .retail-commerce #number-2 {
+      bottom: 6.9%;
+      left: 3.4%; } }
+  @media only screen and (min-width: 3840px) {
+    .retail-commerce #number-2 {
+      bottom: 8.1%;
+      left: 4.1%; } }
+.retail-commerce #number-3 {
+  bottom: 8.4%;
+  left: 7.9%; }
+  @media only screen and (min-width: 1383px) and (max-width: 1599px) {
+    .retail-commerce #number-3 {
+      bottom: 9.1%;
+      left: 8%; } }
+  @media only screen and (min-width: 1600px) {
+    .retail-commerce #number-3 {
+      bottom: 9.7%;
+      left: 8%; } }
+  @media only screen and (min-width: 1680px) {
+    .retail-commerce #number-3 {
+      bottom: 10.4%;
+      left: 8.2%; } }
+  @media only screen and (min-width: 3840px) {
+    .retail-commerce #number-3 {
+      bottom: 12%;
+      left: 8.6%; } }
+.retail-commerce #number-4 {
+  bottom: 15.5%;
+  left: 10.8%; }
+  @media only screen and (min-width: 1383px) and (max-width: 1599px) {
+    .retail-commerce #number-4 {
+      bottom: 15.8%;
+      left: 10.6%; } }
+  @media only screen and (min-width: 1600px) {
+    .retail-commerce #number-4 {
+      bottom: 16%;
+      left: 10.9%; } }
+  @media only screen and (min-width: 1680px) {
+    .retail-commerce #number-4 {
+      bottom: 16.7%;
+      left: 11.2%; } }
+  @media only screen and (min-width: 3840px) {
+    .retail-commerce #number-4 {
+      bottom: 18.8%;
+      left: 11.6%; } }
+.retail-commerce #number-5 {
+  bottom: 17.4%;
+  left: 19.8%; }
+  @media only screen and (min-width: 1383px) and (max-width: 1599px) {
+    .retail-commerce #number-5 {
+      bottom: 17.4%;
+      left: 19.8%; } }
+  @media only screen and (min-width: 1600px) {
+    .retail-commerce #number-5 {
+      bottom: 17.8%;
+      left: 19.9%; } }
+  @media only screen and (min-width: 1680px) {
+    .retail-commerce #number-5 {
+      bottom: 18.1%;
+      left: 19.9%; } }
+  @media only screen and (min-width: 3840px) {
+    .retail-commerce #number-5 {
+      bottom: 19.8%;
+      left: 20.6%; } }
+.retail-commerce #number-6 {
+  top: 25.5%;
+  left: 28.2%; }
+  @media only screen and (min-width: 1383px) and (max-width: 1599px) {
+    .retail-commerce #number-6 {
+      top: 25.6%;
+      left: 28.4%; } }
+  @media only screen and (min-width: 1600px) {
+    .retail-commerce #number-6 {
+      top: 25.6%;
+      left: 28.5%; } }
+  @media only screen and (min-width: 1680px) {
+    .retail-commerce #number-6 {
+      top: 25.8%;
+      left: 28.7%; } }
+  @media only screen and (min-width: 3840px) {
+    .retail-commerce #number-6 {
+      top: 26.1%;
+      left: 29.2%; } }
+.retail-commerce #number-7 {
+  top: 41.4%;
+  left: 38.8%; }
+  @media only screen and (min-width: 1383px) and (max-width: 1599px) {
+    .retail-commerce #number-7 {
+      top: 41.6%;
+      left: 38.9%; } }
+  @media only screen and (min-width: 1600px) {
+    .retail-commerce #number-7 {
+      top: 41.8%;
+      left: 39%; } }
+  @media only screen and (min-width: 1680px) {
+    .retail-commerce #number-7 {
+      top: 42%;
+      left: 39.3%; } }
+  @media only screen and (min-width: 3840px) {
+    .retail-commerce #number-7 {
+      top: 42.3%;
+      left: 40.1%; } }
+.retail-commerce #number-8 {
+  top: 42.2%;
+  right: 40%; }
+  @media only screen and (min-width: 1383px) and (max-width: 1599px) {
+    .retail-commerce #number-8 {
+      top: 42.3%;
+      right: 40.2%; } }
+  @media only screen and (min-width: 1600px) {
+    .retail-commerce #number-8 {
+      top: 42.3%;
+      right: 40.4%; } }
+  @media only screen and (min-width: 1680px) {
+    .retail-commerce #number-8 {
+      top: 42.4%;
+      right: 40.7%; } }
+  @media only screen and (min-width: 3840px) {
+    .retail-commerce #number-8 {
+      top: 43.4%;
+      right: 41.4%; } }
+.retail-commerce #number-9 {
+  bottom: 29.1%;
+  right: 20%; }
+  @media only screen and (min-width: 1383px) and (max-width: 1599px) {
+    .retail-commerce #number-9 {
+      bottom: 29.3%;
+      right: 20.2%; } }
+  @media only screen and (min-width: 1600px) {
+    .retail-commerce #number-9 {
+      bottom: 29.3%;
+      right: 20.4%; } }
+  @media only screen and (min-width: 1680px) {
+    .retail-commerce #number-9 {
+      bottom: 30.6%;
+      right: 20.4%; } }
+  @media only screen and (min-width: 3840px) {
+    .retail-commerce #number-9 {
+      bottom: 31.6%;
+      right: 21.2%; } }
+.retail-commerce #number-10 {
+  bottom: 21%;
+  right: 9.2%; }
+  @media only screen and (min-width: 1383px) and (max-width: 1599px) {
+    .retail-commerce #number-10 {
+      bottom: 21.2%;
+      right: 9.2%; } }
+  @media only screen and (min-width: 1600px) {
+    .retail-commerce #number-10 {
+      bottom: 21.3%;
+      right: 9.2%; } }
+  @media only screen and (min-width: 1680px) {
+    .retail-commerce #number-10 {
+      bottom: 22%;
+      right: 9.7%; } }
+  @media only screen and (min-width: 3840px) {
+    .retail-commerce #number-10 {
+      bottom: 22.8%;
+      right: 10.1%; } }
+.retail-commerce #number-11 {
+  top: 36.4%;
+  right: 30.4%; }
+  @media only screen and (min-width: 1383px) and (max-width: 1599px) {
+    .retail-commerce #number-11 {
+      top: 36.4%;
+      right: 30.7%; } }
+  @media only screen and (min-width: 1600px) {
+    .retail-commerce #number-11 {
+      top: 36.7%;
+      right: 30.9%; } }
+  @media only screen and (min-width: 1680px) {
+    .retail-commerce #number-11 {
+      top: 37.1%;
+      right: 31.3%; } }
+  @media only screen and (min-width: 3840px) {
+    .retail-commerce #number-11 {
+      top: 37.7%;
+      right: 32%; } }
+
 .drag {
   width: 91px;
   height: 91px;
@@ -1581,5 +1793,14 @@ body {
 
 .tippy-popper[x-placement^=left] .tippy-arrow {
   border-left: 8px solid #000000; }
+
+[data-barba='wrapper'] {
+  position: relative; }
+
+[data-barba='container'] {
+  will-change: transform; }
+  .is-animating > [data-barba='container'] {
+    position: absolute;
+    width: 100%; }
 
 /*# sourceMappingURL=style.css.map */

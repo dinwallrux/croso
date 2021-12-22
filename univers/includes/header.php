@@ -5,7 +5,8 @@ $pages = [
     'gares-aeroports',
     'stades',
     'lieux-evenementiels',
-    'centres-commerciaux-industrie'
+    'centres-commerciaux-industrie',
+    'retail-commerce',
 ];
 $indexCurrentPage = array_search($_SESSION['page_slug'], $pages);
 $lastIndex = array_search(end($pages), $pages);
@@ -26,7 +27,7 @@ $urlArrorRight = $indexCurrentPage == $lastIndex ? $pages[0] . '.php' : $pages[$
     </div>
     <div class="wrap-title">
         <div class="arrow arrow-left">
-            <a href="<?php echo $urlArrorLeft ?>">
+            <a href="<?php echo $urlArrorLeft ?>" data-direction="prev">
                 <i class="ion ion-ios-arrow-dropleft"></i>
             </a>
         </div>
@@ -35,7 +36,7 @@ $urlArrorRight = $indexCurrentPage == $lastIndex ? $pages[0] . '.php' : $pages[$
             <h2><?php echo $_SESSION['page_name'] ?></h2>
         </div>
         <div class="arrow arrow-right">
-            <a href="<?php echo $urlArrorRight ?>">
+            <a href="<?php echo $urlArrorRight ?>" data-direction="next">
                 <i class="ion ion-ios-arrow-dropright"></i>
             </a>
         </div>

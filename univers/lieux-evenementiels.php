@@ -3,7 +3,6 @@ session_start();
 $_SESSION['page_name'] = 'Lieux évènementiels';
 $_SESSION['page_slug'] = 'lieux-evenementiels';
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,8 +12,8 @@ $_SESSION['page_slug'] = 'lieux-evenementiels';
     
     <?php include_once('./includes/head_scripts.php') ?>
 </head>
-<body>
-    <div class="container">
+<body data-barba="wrapper">
+    <div class="container" data-barba="container">
         <?php include_once('./includes/header.php') ?>
 
         <?php include_once('./includes/sidebar.php') ?>

@@ -43,9 +43,87 @@ jQuery(document).ready(function ($) {
             $('.sidebar').toggleClass('collapsed');
             trigger.toggleClass('back')
         });
-
-
     }();
+
+    // transitions animation page
+    function slide(targets, step, direction){
+        const duration = 1000;
+        const from = step === 'leave' ? 0 : 100;
+        const to = step === 'leave' ? 100 : 0;
+
+        targets.style.transform = direction === 'next' ?
+            `translateX(${from}%)` :
+            `translateX(-${from}%)`;
+
+        const translateX = direction === 'next' ? `-${to}%` : `${to}%`;
+        const staggerX = window.innerWidth * 0.1;
+        const anim = anime.timeline({
+            easing: 'easeInOutQuart',
+            duration,
+        });
+
+        anim.add({
+            targets,
+            translateX,
+        });
+
+
+        if (step === 'enter') {
+            anim.add({
+                targets: targets.querySelectorAll('main > *'),
+                translateX: direction === 'next' ? [staggerX, 0] : [-staggerX, 0],
+                duration: duration * 0.6,
+                easing: 'easeOutQuart',
+                delay: anime.stagger(100),
+            }, '-=500');
+        }
+
+        return anim.finished;
+    }
+
+    // init barba transition page
+    barba.hooks.before(() => {
+        barba.wrapper.classList.add('is-animating');
+    });
+    barba.hooks.after(() => {
+        barba.wrapper.classList.remove('is-animating');
+        location.reload();
+    });
+    barba.init({
+        debug: true,
+        transitions: [
+            {
+                sync: true,
+                custom: ({ trigger }) => trigger.dataset && trigger.dataset.direction === 'next',
+                leave: ({ current }) => slide(current.container, 'leave', 'next'),
+                enter: ({ next }) => {
+                    slide(next.container, 'enter', 'next')
+                },
+            },
+            {
+                sync: true,
+                custom: ({ trigger }) => trigger.dataset && trigger.dataset.direction === 'prev',
+                leave: ({ current }) => slide(current.container, 'leave', 'prev'),
+                enter: ({ next }) => {
+                    slide(next.container, 'enter', 'prev')
+                },
+            },
+            {
+                sync: true,
+                custom: ({ trigger }) => trigger.dataset && trigger.dataset.direction === 'sidebar',
+                leave: ({ current }) => {
+                    return gsap.to(current.container, {
+                        opacity: 0
+                    });
+                },
+                enter: ({ next }) => {
+                    return gsap.from(next.container, {
+                        opacity: 0
+                    });
+                },
+            },
+        ]
+    });
 
     // Fetch Tooltip
     !function () {
@@ -443,9 +521,9 @@ jQuery(document).ready(function ($) {
                 idButton: 'number-10',
                 idTooltip: 'tooltip-10',
                 value: '10',
-                tooltipTitle: 'Barrière extensible de sécurité',
-                tooltipText: 'Cette barrière extensible de sécurité est autoportante, robuste et supporte de fortes pressions. Facile et rapide à mettre en œuvre et à transporter, elle se plie et se déplie en seulement 5 sec. par une seule personne.',
-                link: 'https://croso-france.com/316-barriere-extensible-de-securite',
+                tooltipTitle: 'JetTrac, le chariot de fermeture avec sangle',
+                tooltipText: "Le système JetTrac a été conçu pour une utilisation en extérieur dans des conditions météorologiques très variées. Facile à déplacer, il convient pour la protection rapide de zones dangereuses, en particulier sur de longues distances dans les aéroports.",
+                link: 'https://croso-france.com/aeroports-et-transport/4174-jettrac.html',
                 tooltipButton: 'détails du produit'
             },
         ]
@@ -724,6 +802,132 @@ jQuery(document).ready(function ($) {
                 `);
             })
         }
+
+        // centres-commerciaux-industrie
+        let retailCommerce = [
+            {
+                idButton: 'number-1',
+                idTooltip: 'tooltip-1',
+                value: '1',
+                tooltipTitle: 'Appui-vélos',
+                tooltipText: 'Nos appuis-vélos en acier galvanisé à chaud et inox prennent une place de plus en plus importante dans l’aménagement des espaces publics.',
+                link: 'https://croso-france.com/326-appuis-velos',
+                tooltipButton: 'détails du produit'
+            },
+            {
+                idButton: 'number-2',
+                idTooltip: 'tooltip-2',
+                value: '2',
+                tooltipTitle: 'Jardinière',
+                tooltipText: 'En acier, en acier corten, en bois exotique ou en plastique, nos jardinières conviennent aussi bien aux environnements classiques que modernes.',
+                link: 'https://croso-france.com/324-jardinieres',
+                tooltipButton: 'détails du produit'
+            },
+            {
+                idButton: 'number-3',
+                idTooltip: 'tooltip-3',
+                value: '3',
+                tooltipTitle: 'Corbeille de propreté',
+                tooltipText: 'Nos corbeilles de propreté sont esthétiques, fonctionnelles et pratiques pour créer une harmonie avec les modèles de banc.',
+                link: 'https://croso-france.com/320-corbeilles-de-proprete',
+                tooltipButton: 'détails du produit'
+            },
+            {
+                idButton: 'number-4',
+                idTooltip: 'tooltip-4',
+                value: '4',
+                tooltipTitle: 'Banc',
+                tooltipText: 'Large choix de modèles de bancs pour tous les usages : bancs en bois FSC 100% ou en acier, bancs de protection des arbres, ensembles pique-nique…',
+                link: 'https://croso-france.com/321-bancs',
+                tooltipButton: 'détails du produit'
+            },
+            {
+                idButton: 'number-5',
+                idTooltip: 'tooltip-5',
+                value: '5',
+                tooltipTitle: 'Garde-corps inox avec main courante à LED',
+                tooltipText: 'Le garde corps inox avec mains-courantes à LED, rassemblant la main-courante et l’éclairage avec une variété de couleurs en un seul produit innovant, placent la qualité et le design à portée de main.',
+                link: 'https://croso-france.com/22-gardes-corps-inox-en-kits',
+                tooltipButton: 'détails du produit'
+            },
+            {
+                idButton: 'number-6',
+                idTooltip: 'tooltip-6',
+                value: '6',
+                tooltipTitle: 'Barrière d’accès',
+                tooltipText: "Nos barrières d’accès permettent de gérer les accès aux allées, routes, chemins, aux parkings, … Cette gamme complète permet de fournir un produit adapté à chaque besoin.",
+                link: 'https://croso-france.com/223-barrieres-et-portiques-dacces-tourniquets',
+                tooltipButton: 'détails du produit'
+            },
+            {
+                idButton: 'number-7',
+                idTooltip: 'tooltip-7',
+                value: '7',
+                tooltipTitle: '',
+                tooltipText: '',
+                link: '#',
+                tooltipButton: 'détails du produit'
+            },
+            {
+                idButton: 'number-8',
+                idTooltip: 'tooltip-8',
+                value: '8',
+                tooltipTitle: 'Poteau de sécurité',
+                tooltipText: 'Avec leur design élégant et harmonieux nos bornes se fondent à merveille dans le paysage urbain.',
+                link: 'https://croso-france.com/224-poteaux-et-bornes-de-voirie-saturn',
+                tooltipButton: 'détails du produit'
+            },
+            {
+                idButton: 'number-9',
+                idTooltip: 'tooltip-9',
+                value: '9',
+                tooltipTitle: 'Borne lumineuse Solarpost',
+                tooltipText: 'Alimentée à 100% par l’énergie solaire grâce à ses panneaux solaires situés sur les 4 côtés de la borne, elle fournit un éclairage continu et intelligent.',
+                link: 'https://croso-france.com/crososolar/7244-solarpost.html',
+                tooltipButton: 'détails du produit'
+            },
+            {
+                idButton: 'number-10',
+                idTooltip: 'tooltip-10',
+                value: '10',
+                tooltipTitle: 'SolarEye',
+                tooltipText: 'Spot à encastrer au sol entièrement alimenté par l’énergie solaire, le Solareye fournit un balisage à lumière LED à visibilité de 360°.',
+                link: 'https://croso-france.com/crososolar/7243-solareye.html',
+                tooltipButton: 'détails du produit'
+            },
+            {
+                idButton: 'number-11',
+                idTooltip: 'tooltip-11',
+                value: '11',
+                tooltipTitle: 'Poteaux à sangle',
+                tooltipText: "La gamme de poteaux gère file Beltrac a été conçue pour allier design, solidité et facilité d'utilisation. Ils permettent d’améliorer les conditions de circulation d’orientation et de réception des visiteurs.",
+                link: 'https://croso-france.com/79-lieux-culturels-et-publics',
+                tooltipButton: 'détails du produit'
+            },
+        ]
+
+        if($('.retail-commerce').length > 0) {
+            retailCommerce.forEach(function (data) {
+                $('.retail-commerce .bg .mirror-width-image').append(`
+                    <div class="numbers" data-depth="0.7">
+                        <div id="${data.idButton}" class="number">
+                            <span>${data.value}</span>
+                        </div>
+                        <div id="${data.idTooltip}" class="tooltip">
+                            <div class="tooltip-body">
+                                <h4>${data.tooltipTitle}</h4>
+                                <p>${data.tooltipText}</p>
+                            </div>
+                            <div class="tooltip-footer">
+                                <a href="${data.link}" class="btn btn-success">
+                                    <span>${data.tooltipButton}</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                `);
+            })
+        }
     }();
 
     // Add tooltip
@@ -892,7 +1096,7 @@ $('.drag--right').on('click', function() {
 })
 
 // check img attribute loaded 
-let loadImage = function() {
+function loadImage() {
     var image = document.querySelector('.bg img');
     var isLoaded = image.complete && image.naturalHeight !== 0;
     if (isLoaded) {
@@ -901,7 +1105,9 @@ let loadImage = function() {
             
             // make center of horizontal scroll
             let innerWidth = document.querySelector('.scrolling-wrapper > div')
-            slider.scrollLeft = (innerWidth.offsetWidth - slider.offsetWidth) / 2
+            $('.scrolling-wrapper').stop().animate({
+                scrollLeft: (innerWidth.offsetWidth - slider.offsetWidth) / 2
+            }, 300);
         }, 100);
     }
 };

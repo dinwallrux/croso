@@ -1,7 +1,7 @@
 <?php
 session_start();
-$_SESSION['page_name'] = 'Centres commerciaux & industrie';
-$_SESSION['page_slug'] = 'centres-commerciaux-industrie';
+$_SESSION['page_name'] = 'Retail / commerce';
+$_SESSION['page_slug'] = 'retail-commerce';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +20,7 @@ $_SESSION['page_slug'] = 'centres-commerciaux-industrie';
 
         <?php include_once('./includes/overlay.php') ?>
 
-        <div class="body centres-commerciaux-industrie">
+        <div class="body retail-commerce">
             <div class="drag drag--left">
                 <i class="ion ion-ios-arrow-round-back"></i>
             </div>
@@ -28,7 +28,7 @@ $_SESSION['page_slug'] = 'centres-commerciaux-industrie';
                 <i class="ion ion-ios-arrow-round-forward"></i>
             </div>
             <div class="bg scrolling-wrapper">
-                <img src="./img/centres-commerciaux-industrie.jpg" alt="">
+                <img src="./img/retail-commerce.jpg" alt="">
                 <div class="mirror-width-image"></div>
             </div>
         </div>

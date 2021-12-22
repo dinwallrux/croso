@@ -199,6 +199,7 @@ body {
 }
 
 .sidebar {
+    opacity: 1;
     position: absolute;
     top: 100px;
     left: 0;
@@ -238,6 +239,7 @@ body {
     }
     &.collapsed {
         left: -410px;
+        opacity: 0;
     }
     h3 {
         font-family: Palanquin;
@@ -2740,6 +2742,449 @@ body {
     }
 }
 
+.retail-commerce {
+    #number-1 {
+        bottom: 6.2%;
+        left: 27.6%;
+        // @include tablet-landscape-only() {
+        //     bottom: 4.5%;
+        //     left: 23.7%;
+        // }
+        // @include desktop-and-up() {
+        //     bottom: 4.5%;
+        //     left: 23.7%;
+        // }
+        @include desktop-medium() {
+            bottom: 6.2%;
+            left: 27.9%;
+        }
+        @include desktop-large() {
+            bottom: 6.3%;
+            left: 28%;
+        }
+        @include desktop-extra-large() {
+            bottom: 6.9%;
+            left: 28.4%;
+        }
+        // @include full-hd() {
+        //     bottom: 6.7%;
+        //     left: 24.34%;
+        // }
+        // @include retina-2560() {
+        //     bottom: -0.9%;
+        //     left: 20%;
+        // }
+        @include retina-3840() {
+            bottom: 7.5%;
+            left: 29.1%;
+        }
+        // @include retina-5120() {
+        //     bottom: 0.8%;
+        //     left: 20.4%;
+        // }
+    }
+    #number-2 {
+        bottom: 4.3%;
+        left: 3%;
+        // @include tablet-landscape-only() {
+        //     bottom: 31.6%;
+        //     left: 11.2%;
+        // }
+        // @include desktop-and-up() {
+        //     bottom: 31.6%;
+        //     left: 11.2%;
+        // }
+        @include desktop-medium() {
+            bottom: 5.2%;
+            left: 3%;
+        }
+        @include desktop-large() {
+            bottom: 5.6%;
+            left: 3.2%;
+        }
+        @include desktop-extra-large() {
+            bottom: 6.9%;
+            left: 3.4%;
+        }
+        // @include full-hd() {
+        //     bottom: 33.4%;
+        //     left: 11.4%;
+        // }
+        // @include retina-2560() {
+        //     bottom: 30.4%;
+        //     left: 4.9%;
+        // }
+        @include retina-3840() {
+            bottom: 8.1%;
+            left: 4.1%;
+        }
+        // @include retina-5120() {
+        //     bottom: 32%;
+        //     left: 5.2%;
+        // }
+    }
+    #number-3 {
+        bottom: 8.4%;
+        left: 7.9%;
+        // @include tablet-landscape-only() {
+        //     bottom: 41.1%;
+        //     left: 12.6%;
+        // }
+        // @include desktop-and-up() {
+        //     bottom: 41.1%;
+        //     left: 12.6%;
+        // }
+        @include desktop-medium() {
+            bottom: 9.1%;
+            left: 8%;
+        }
+        @include desktop-large() {
+            bottom: 9.7%;
+            left: 8%;
+        }
+        @include desktop-extra-large() {
+            bottom: 10.4%;
+            left: 8.2%;
+        }
+        // @include full-hd() {
+        //     bottom: 42.8%;
+        //     left: 13.6%;
+        // }
+        // @include retina-2560() {
+        //     bottom: 41.5%;
+        //     left: 7.3%;
+        // }
+        @include retina-3840() {
+            bottom: 12%;
+            left: 8.6%;
+        }
+        // @include retina-5120() {
+        //     bottom: 43.2%;
+        //     left: 7.7%;
+        // }
+    }
+    #number-4 {
+        bottom: 15.5%;
+        left: 10.8%;
+        // @include tablet-landscape-only() {
+        //     bottom: 39.4%;
+        //     left: 8.2%;
+        // }
+        // @include desktop-and-up() {
+        //     bottom: 39.4%;
+        //     left: 8.2%;
+        // }
+        @include desktop-medium() {
+            bottom: 15.8%;
+            left: 10.6%;
+        }
+        @include desktop-large() {
+            bottom: 16%;
+            left: 10.9%;
+        }
+        @include desktop-extra-large() {
+            bottom: 16.7%;
+            left: 11.2%;
+        }
+        // @include full-hd() {
+        //     bottom: 40%;
+        //     left: 8.6%;
+        // }
+        // @include retina-2560() {
+        //     bottom: 38.1%;
+        //     left: 1.5%;
+        // }
+        @include retina-3840() {
+            bottom: 18.8%;
+            left: 11.6%;
+        }
+        // @include retina-5120() {
+        //     bottom: 38.7%;
+        //     left: 2%;
+        // }
+    }
+    #number-5 {
+        bottom: 17.4%;
+        left: 19.8%;
+        // @include tablet-landscape-only() {
+        //     bottom: 22.9%;
+        //     left: 13.3%;
+        // }
+        // @include desktop-and-up() {
+        //     bottom: 22.9%;
+        //     left: 13.3%;
+        // }
+        @include desktop-medium() {
+            bottom: 17.4%;
+            left: 19.8%;
+        }
+        @include desktop-large() {
+            bottom: 17.8%;
+            left: 19.9%;
+        }
+        @include desktop-extra-large() {
+            bottom: 18.1%;
+            left: 19.9%;
+        }
+        // @include full-hd() {
+        //     bottom: 24.5%;
+        //     left: 14%;
+        // }
+        // @include retina-2560() {
+        //     bottom: 19.8%;
+        //     left: 7.9%;
+        // }
+        @include retina-3840() {
+            bottom: 19.8%;
+            left: 20.6%;
+        }
+        // @include retina-5120() {
+        //     bottom: 21.7%;
+        //     left: 8.4%;
+        // }
+    }
+    #number-6 {
+        top: 25.5%;
+        left: 28.2%;
+        // @include tablet-landscape-only() {
+        //     top: 14.2%;
+        //     left: 41.7%;
+        // }
+        // @include desktop-and-up() {
+        //     top: 14.2%;
+        //     left: 41.7%;
+        // }
+        @include desktop-medium() {
+            top: 25.6%;
+            left: 28.4%;
+        }
+        @include desktop-large() {
+            top: 25.6%;
+            left: 28.5%;
+        }
+        @include desktop-extra-large() {
+            top: 25.8%;
+            left: 28.7%;
+        }
+        // @include full-hd() {
+        //     top: 14.4%;
+        //     left: 42.1%;
+        // }
+        // @include retina-2560() {
+        //     top: 9.2%;
+        //     left: 40.6%;
+        // }
+        @include retina-3840() {
+            top: 26.1%;
+            left: 29.2%;
+        }
+        // @include retina-5120() {
+        //     top: 9.6%;
+        //     left: 40.9%;
+        // }
+    }
+    #number-7 {
+        top: 41.4%;
+        left: 38.8%;
+        // @include tablet-landscape-only() {
+        //     top: 0%;
+        //     left: 24.8%;
+        // }
+        // @include desktop-and-up() {
+        //     top: 0%;
+        //     left: 24.8%;
+        // }
+        @include desktop-medium() {
+            top: 41.6%;
+            left: 38.9%;
+        }
+        @include desktop-large() {
+            top: 41.8%;
+            left: 39%;
+        }
+        @include desktop-extra-large() {
+            top: 42%;
+            left: 39.3%;
+        }
+        // @include full-hd() {
+        //     top: 1.4%;
+        //     left: 24.8%;
+        // }
+        // @include retina-2560() {
+        //     top: -6.8%;
+        //     left: 20.6%;
+        // }
+        @include retina-3840() {
+            top: 42.3%;
+            left: 40.1%;
+        }
+        // @include retina-5120() {
+        //     top: -5.5%;
+        //     left: 20.8%;
+        // }
+    }
+    #number-8 {
+        top: 42.2%;
+        right: 40%;
+        // @include tablet-landscape-only() {
+        //     top: 10.7%;
+        //     right: 8.4%;
+        // }
+        // @include desktop-and-up() {
+        //     top: 10.7%;
+        //     right: 8.4%;
+        // }
+        @include desktop-medium() {
+            top: 42.3%;
+            right: 40.2%;
+        }
+        @include desktop-large() {
+            top: 42.3%;
+            right: 40.4%;
+        }
+        @include desktop-extra-large() {
+            top: 42.4%;
+            right: 40.7%;
+        }
+        // @include full-hd() {
+        //     top: 12.8%;
+        //     right: 9%;
+        // }
+        // @include retina-2560() {
+        //     top: 6.7%;
+        //     right: 2.2%;
+        // }
+        @include retina-3840() {
+            top: 43.4%;
+            right: 41.4%;
+        }
+        // @include retina-5120() {
+        //     top: 8%;
+        //     right: 2.4%;
+        // }
+    }
+    #number-9 {
+        bottom: 29.1%;
+        right: 20%;
+        // @include tablet-landscape-only() {
+        //     bottom: 22.9%;
+        //     right: 15.5%;
+        // }
+        // @include desktop-and-up() {
+        //     bottom: 22.9%;
+        //     right: 15.5%;
+        // }
+        @include desktop-medium() {
+            bottom: 29.3%;
+            right: 20.2%;
+        }
+        @include desktop-large() {
+            bottom: 29.3%;
+            right: 20.4%;
+        }
+        @include desktop-extra-large() {
+            bottom: 30.6%;
+            right: 20.4%;
+        }
+        // @include full-hd() {
+        //     bottom: 23.4%;
+        //     right: 15.8%;
+        // }
+        // @include retina-2560() {
+        //     bottom: 19.3%;
+        //     right: 10%;
+        // }
+        @include retina-3840() {
+            bottom: 31.6%;
+            right: 21.2%;
+        }
+        // @include retina-5120() {
+        //     bottom: 19.7%;
+        //     right: 10.7%;
+        // }
+    }
+    #number-10 {
+        bottom: 21%;
+        right: 9.2%;
+        // @include tablet-landscape-only() {
+        //     bottom: 32.6%;
+        //     right: 44.3%;
+        // }
+        // @include desktop-and-up() {
+        //     bottom: 32.6%;
+        //     right: 44.3%;
+        // }
+        @include desktop-medium() {
+            bottom: 21.2%;
+            right: 9.2%;
+        }
+        @include desktop-large() {
+            bottom: 21.3%;
+            right: 9.2%;
+        }
+        @include desktop-extra-large() {
+            bottom: 22%;
+            right: 9.7%;
+        }
+        // @include full-hd() {
+        //     bottom: 33%;
+        //     right: 44.7%;
+        // }
+        // @include retina-2560() {
+        //     bottom: 30.4%;
+        //     right: 43.7%;
+        // }
+        @include retina-3840() {
+            bottom: 22.8%;
+            right: 10.1%;
+        }
+        // @include retina-5120() {
+        //     bottom: 30.9%;
+        //     right: 44%;
+        // }
+    }
+    #number-11 {
+        top: 36.4%;
+        right: 30.4%;
+        // @include tablet-landscape-only() {
+        //     top: 32.6%;
+        //     right: 44.3%;
+        // }
+        // @include desktop-and-up() {
+        //     top: 32.6%;
+        //     right: 44.3%;
+        // }
+        @include desktop-medium() {
+            top: 36.4%;
+            right: 30.7%;
+        }
+        @include desktop-large() {
+            top: 36.7%;
+            right: 30.9%;
+        }
+        @include desktop-extra-large() {
+            top: 37.1%;
+            right: 31.3%;
+        }
+        // @include full-hd() {
+        //     top: 33%;
+        //     right: 44.7%;
+        // }
+        // @include retina-2560() {
+        //     top: 30.4%;
+        //     right: 43.7%;
+        // }
+        @include retina-3840() {
+            top: 37.7%;
+            right: 32%;
+        }
+        // @include retina-5120() {
+        //     top: 30.9%;
+        //     right: 44%;
+        // }
+    }
+}
+
 .drag {
     width: 91px;
     height: 91px;
@@ -2885,4 +3330,17 @@ body {
 }
 .tippy-popper[x-placement^=left] .tippy-arrow {
     border-left: 8px solid $black;
+}
+
+[data-barba='wrapper'] {
+    position: relative;
+}
+
+[data-barba='container'] {
+    will-change: transform;
+    
+    .is-animating > & {
+        position: absolute;
+        width: 100%;
+    }
 }
