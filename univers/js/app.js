@@ -863,9 +863,9 @@ jQuery(document).ready(function ($) {
                 idButton: 'number-7',
                 idTooltip: 'tooltip-7',
                 value: '7',
-                tooltipTitle: '',
-                tooltipText: '',
-                link: '#',
+                tooltipTitle: 'Kit 2 poteaux en inox et 2 tubes',
+                tooltipText: "D'une élégance stylistique rare, ce garde-corps à deux tubes de liaison, en inox haut de gamme, s'intègre harmonieusement dans un environnement architectural et commercial. Sa solidité lui permet d'être parfaitement adapté pour une installation en zone très fréquentée.",
+                link: 'https://croso-france.com/poteaux-et-bornes-de-voirie-saturn/6870-systemes-de-garde-corps-avec-ou-sans-main-courante.html',
                 tooltipButton: 'détails du produit'
             },
             {

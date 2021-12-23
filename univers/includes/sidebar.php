@@ -42,7 +42,7 @@
             <li>
                 <a href="<?php echo($_SESSION['page_slug'] == 'retail-commerce' ? '#' : './retail-commerce.php') ?>" data-direction="sidebar">
                     <i class="ion ion-ios-square"></i>
-                    <span>Retail / commerce</span>
+                    <span>Retail / commerces</span>
                 </a>
             </li>
         </ul>

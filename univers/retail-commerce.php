@@ -1,6 +1,6 @@
 <?php
 session_start();
-$_SESSION['page_name'] = 'Retail / commerce';
+$_SESSION['page_name'] = 'Retail / commerces';
 $_SESSION['page_slug'] = 'retail-commerce';
 ?>
 <!DOCTYPE html>
