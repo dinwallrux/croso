@@ -1412,8 +1412,8 @@ body {
         // }
     }
     #number-9 {
-        top: 51.2%;
-        left: 4.3%;
+        top: 42.2%;
+        left: 5.7%;
         // @include tablet-landscape-only() {
         //     top: 49.5%;
         //     left: 2.9%;
@@ -1423,16 +1423,16 @@ body {
         //     left: 2.9%;
         // }
         @include desktop-medium() {
-            top: 51.8%;
-            left: 4.3%;
+            top: 44.8%;
+            left: 5.8%;
         }
         @include desktop-large() {
-            top: 52.4%;
-            left: 4.3%;
+            top: 43.6%;
+            left: 5.6%;
         }
         @include desktop-extra-large() {
             top: 53%;
-            left: 4.3%;
+            left: 4.6%;
         }
         // @include full-hd() {
         //     top: 51%;
