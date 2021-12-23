@@ -12,15 +12,15 @@ $_SESSION['page_slug'] = 'gares-aeroports';
     
     <?php include_once('./includes/head_scripts.php') ?>
 </head>
-<body data-barba="wrapper">
-    <div class="container" data-barba="container">
+<body>
+    <div class="container" data-barba="wrapper">
         <?php include_once('./includes/header.php') ?>
 
         <?php include_once('./includes/sidebar.php') ?>
 
         <?php include_once('./includes/overlay.php') ?>
 
-        <div class="body gares-aeroports">
+        <div class="body gares-aeroports" data-barba="container">
             <div class="drag drag--left">
                 <i class="ion ion-ios-arrow-round-back"></i>
             </div>
