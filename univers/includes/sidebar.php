@@ -47,26 +47,26 @@
             </li>
         </ul>
         <p>Vous pouvez également accéder directement à notre site internet classique :</p>
-        <button class="btn btn-outline">
+        <a href="https://croso-france.com/" class="btn btn-outline">
             <span>Accéder au site internet Croso France</span>
-        </button>
+        </a>
     </div>
 
     <div class="bottom">
         <p>Bonne visite, n’hésitez pas à nous contacter pour avoir plus d’informations!</p>
         <ul class="social-media">
             <li>
-                <a href="#">
+                <a href="mailto:info@croso-france.fr">
                     <img src="./img/mail.png" alt="">
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="https://www.facebook.com/CROSO-France-970336106372776/" target="_blank">
                     <img src="./img/facebook.png" alt="">
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="https://fr.linkedin.com/company/croso-france" target="_blank">
                     <img src="./img/linkedin.png" alt="">
                 </a>
             </li>

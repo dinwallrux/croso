@@ -144,7 +144,7 @@ jQuery(document).ready(function ($) {
                 value: '2',
                 tooltipTitle: 'Appui-vélos',
                 tooltipText: 'Nos appuis-vélos en acier galvanisé à chaud et inox prennent une place de plus en plus importante dans l’aménagement des espaces publics.',
-                link: '#',
+                link: 'https://croso-france.com/326-appuis-velos',
                 tooltipButton: 'détails du produit'
             },
             {
@@ -162,6 +162,7 @@ jQuery(document).ready(function ($) {
                 value: '4',
                 tooltipTitle: 'Bornes lumineuses',
                 tooltipText: 'Poteau en acier inoxydable avec système d’éclairage intelligent intégrant la technique LED avec une cellule photovoltaïque placée dans la tête.',
+                link: 'https://croso-france.com/crososolar/7244-solarpost.html',
                 tooltipButton: 'détails du produit'
             },
             {
@@ -170,7 +171,7 @@ jQuery(document).ready(function ($) {
                 value: '5',
                 tooltipTitle: 'Banc',
                 tooltipText: 'Large choix de modèles de bancs pour tous les usages : bancs en bois FSC 100% ou en acier, bancs de protection des arbres, ensembles pique-nique…',
-                link: '#',
+                link: 'https://croso-france.com/321-bancs',
                 tooltipButton: 'détails du produit'
             },
             {
@@ -179,7 +180,7 @@ jQuery(document).ready(function ($) {
                 value: '6',
                 tooltipTitle: 'Corbeille de propreté',
                 tooltipText: 'Nos corbeilles de propreté sont esthétiques, fonctionnelles et pratiques pour créer une harmonie avec les modèles de banc.',
-                link: '#',
+                link: 'https://croso-france.com/320-corbeilles-de-proprete',
                 tooltipButton: 'détails du produit'
             },
             {
@@ -188,7 +189,7 @@ jQuery(document).ready(function ($) {
                 value: '7',
                 tooltipTitle: 'Grille d’arbres',
                 tooltipText: 'Nos grilles d’arbres en fonte, à la fois élégantes et pratiques, conviennent à n’importe quel environnement et s’adaptent à différentes tailles de tronc.',
-                link: '#',
+                link: 'https://croso-france.com/325-grilles-darbre',
                 tooltipButton: 'détails du produit'
             },
         ]
@@ -235,7 +236,7 @@ jQuery(document).ready(function ($) {
                 value: '2',
                 tooltipTitle: 'Appui-vélos',
                 tooltipText: 'Nos appuis-vélos en acier galvanisé à chaud et inox prennent une place de plus en plus importante dans l’aménagement des espaces publics.',
-                link: '#',
+                link: 'https://croso-france.com/326-appuis-velos',
                 tooltipButton: 'détails du produit'
             },
             {
@@ -766,7 +767,7 @@ jQuery(document).ready(function ($) {
                 value: '9',
                 tooltipTitle: 'Poteau de sécurité',
                 tooltipText: 'Le système modulaire Venus au design épuré permet, grâce à ces potelets, bornes basses et ses tubes de liaison, de s’adapter à toutes les configurations pour sécuriser un espace.',
-                link: '#',
+                link: 'https://croso-france.com/224-poteaux-et-bornes-de-voirie-saturn',
                 tooltipButton: 'détails du produit'
             },
             {

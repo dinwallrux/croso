@@ -253,6 +253,9 @@ body {
     outline: none;
     padding: 9px 0; }
     .sidebar .btn.btn-outline {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: 330px;
       height: 42px;
       background: transparent;
